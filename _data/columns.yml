@@ -1,0 +1,22 @@
+---
+- name: Name
+  tag: name
+  type: text
+- name: Class
+  tag: class
+  type: text
+- name: Year
+  tag: year
+  type: number
+- name: Category
+  tag: category
+  type: text
+- name: Scope
+  tag: scope
+  type: text
+- name: License
+  tag: license
+  type: text
+- name: Institution
+  tag: institution
+  type: text

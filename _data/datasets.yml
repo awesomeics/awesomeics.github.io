@@ -1,0 +1,840 @@
+- name: '4SICS'
+  scope: Generic ICS
+  data_type: Network
+  license: Open source
+  reference: '-'
+  url: 'https://www.netresec.com/?page=PCAP4SICS'
+  attacks: Unknown
+  format: pcap
+  best_ids: 'Yu, T. C., Huang, J. Y., Liao, I. E., & Kao, K. F. (2018, November). Mining Anomaly Communication Patterns for Industrial Control Systems. In 2018 Australasian Universities Power Engineering Conference (AUPEC) (pp. 1-6). IEEE.'
+  f1_score: '~1'
+  accuracy: '-'
+  year: 2015
+  institution: 'Netresec'
+  license-specific: N/A
+
+- name: 'BATADAL'
+  scope: Water Distribution
+  data_type: Physical
+  license: Open source
+  reference: "Taormina, R., et al. (2018). Battle of the attack detection algorithms: Disclosing cyber attacks on water distribution networks. Journal of Water Resources Planning and Management, 144(8), 04018048."
+  url: 'https://www.batadal.net/data.html'
+  attacks: 
+    - Replay
+    - MitM
+    - Others
+  format: 
+    - csv
+    - imp
+  best_ids: 'Housh, M., & Ohar, Z. (2018). Model-based approach for cyber-physical attack detection in water distribution systems. Water research, 139, 132-143.'
+  f1_score: 0.97
+  accuracy: '-'
+  year: 2018
+  institution: Various
+  license-specific: CC BY 4.0
+
+- name: "CLIK on PLCs!"
+  scope: Generic ICS
+  data_type:
+    - Network
+    - Binary
+  license: "Open source"
+  reference: "Kalle, S., et al. (2019). Clik on plcs! attacking control logic with decompilation and virtual plc. In Binary Analysis Research (BAR) Workshop, Network and Distributed System Security Symposium (NDSS)."
+  url: 'https://gitlab.com/safelab/clik/-/tree/master/'
+  attacks: 
+    - MitM
+    - Injection
+    - Others
+  format: 
+    - pcap
+    - bin
+  best_ids: 'Kalle, S., et al. (2019). Clik on plcs! attacking control logic with decompilation and virtual plc. In Binary Analysis Research (BAR) Workshop, Network and Distributed System Security Symposium (NDSS).'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2019
+  institution: 'University of New Orleans'
+  license-specific: N/A
+
+- name: "Control-logic-attack-datasets"
+  scope: Generic ICS
+  data_type: Network
+  license: "Open source"
+  reference: "Yoo, H., & Ahmed, I. (2019). Control logic injection attacks on industrial control systems. In IFIP International Conference on ICT Systems Security and Privacy Protection."
+  url: 'https://gitlab.com/safelab/control-logic-attack-datasets/-/tree/master/'
+  attacks: 
+    - Injection
+    - Others
+  format: pcap
+  best_ids: 'Yoo, H., & Ahmed, I. (2019). Control logic injection attacks on industrial control systems. In IFIP International Conference on ICT Systems Security and Privacy Protection.'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2019
+  institution: 'University of New Orleans'
+  license-specific: N/A
+
+
+- name: 'D1: Power System Datasets'
+  scope: Power System
+  data_type: 
+    - Physical
+    - Logs
+  license: Open source
+  url: 'https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets'
+  reference: '-'
+  attacks: 
+    - Injection
+    - Others
+  format: 
+    - csv
+    - arff
+  best_ids: 'Pan, S., Morris, T. H., & Adhikari, U. (2015). A Specification-based Intrusion Detection Framework for Cyber-physical Environment in Electric Power System. IJ Network Security, 17(2), 174-188.'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2013
+  institution: 'University of Alabama in Huntsville'
+  license-specific: N/A
+
+- name: 'D2: Gas Pipeline Datasets'
+  scope: Gas Pipeline
+  data_type: Network
+  license: Open source
+  url: 'https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets'
+  reference: 'Beaver, J. M., Borges-Hink, R. C., & Buckner, M. A. (2013). An evaluation of machine learning methods to detect malicious SCADA communications. In 2013 12th International Conference on Machine Learning and Applications (Vol. 2, pp. 54-59). IEEE.'
+  attacks: 
+    - Injection
+  format: 
+    - csv
+  best_ids: 'Beaver, J. M., Borges-Hink, R. C., & Buckner, M. A. (2013, December). An evaluation of machine learning methods to detect malicious SCADA communications. In 2013 12th International Conference on Machine Learning and Applications (Vol. 2, pp. 54-59). IEEE.'
+  f1_score: '~0.750'
+  accuracy: '-'
+  year: 2013
+  institution: 'University of Alabama in Huntsville'
+
+- name: 'D3b: Water Storage Tank'
+  scope: Water Storage Tank
+  data_type: Network
+  license: Open source
+  url: 'https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets'
+  reference: 'Morris, T., & Gao, W. (2014). Industrial control system traffic data sets for intrusion detection research. In International Conference on Critical Infrastructure Protection (pp. 65-78). Springer, Berlin, Heidelberg.'
+  attacks: 
+    - Reconnaissance
+    - Injection
+    - DoS
+  format: arff
+  best_ids: 'Demertzis, K., Iliadis, L., & Spartalis, S. (2017, August). A spiking one-class anomaly detection framework for cyber-security on industrial control systems. In International Conference on Engineering Applications of Neural Networks (pp. 122-134). Springer, Cham.'
+  f1_score: 0.981
+  accuracy: '-'
+  year: 2014
+  institution: 'University of Alabama in Huntsville'
+  license-specific: N/A
+
+- name: 'D4: New Gas Pipeline'
+  scope: Gas Pipeline
+  data_type: Network
+  license: Open source
+  url: 'https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets'
+  reference: 'Morris, T. H., et al. (2015). Industrial control system simulation and data logging for intrusion detection system research. 7th annual southeastern cyber security summit, 3-4.'
+  attacks: 
+    - MitM
+    - Injection
+    - Others
+  format: arff
+  best_ids: 'Demertzis, K., Iliadis, L., & Spartalis, S. (2017, August). A spiking one-class anomaly detection framework for cyber-security on industrial control systems. In International Conference on Engineering Applications of Neural Networks (pp. 122-134). Springer, Cham.'
+  f1_score: 0.988
+  accuracy: '-'
+  year: 2015
+  institution: 'University of Alabama in Huntsville'
+  license-specific: N/A
+
+- name: 'D5: Energy Manag. S. D.'
+  scope: Energy Management
+  data_type: Logs
+  license: Open source
+  url: 'https://sites.google.com/a/uah.edu/tommy-morris-uah/ics-data-sets'
+  reference: '-'
+  attacks: 
+    - No attacks
+  format: csv
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2015
+  institution: 'University of Alabama in Huntsville'
+  license-specific: N/A
+
+- name: 'Electra Modbus'
+  scope: Power System
+  data_type: Network
+  license: Open source
+  url: 'http://perception.inf.um.es/ICS-datasets/'
+  reference: 'Gómez, Á. et al. (2019). On the generation of anomaly detection datasets in industrial control systems. IEEE Access, 7, 177460-177473.'
+  attacks: 
+    - Reconnaissance
+    - Injection
+    - Replay
+  format: csv
+  best_ids: 'Gómez, Á. L. P., Maimó, L. F., Celdran, A. H., Clemente, F. J. G., Sarmiento, C. C., Masa, C. J. D. C., & Nistal, R. M. (2019). On the generation of anomaly detection datasets in industrial control systems. IEEE Access, 7, 177460-177473.'
+  f1_score: 0.987
+  accuracy: '-'
+  year: 2019
+  institution: 'University of Murcia'
+  license-specific: N/A
+
+- name: 'Electra S7Comm'
+  scope: Power System
+  data_type: Network
+  license: Open source
+  url: 'http://perception.inf.um.es/ICS-datasets/'
+  reference: 'Gómez, Á. L. P., et al. (2019). On the generation of anomaly detection datasets in industrial control systems. IEEE Access, 7, 177460-177473.'
+  attacks: 
+    - Reconnaissance
+    - Injection
+    - Replay
+  format: csv
+  best_ids: 'Gómez, Á. L. P., Maimó, L. F., Celdran, A. H., Clemente, F. J. G., Sarmiento, C. C., Masa, C. J. D. C., & Nistal, R. M. (2019). On the generation of anomaly detection datasets in industrial control systems. IEEE Access, 7, 177460-177473.'
+  f1_score: 0.996
+  accuracy: '-'
+  year: 2019
+  institution: 'University of Murcia'
+  license-specific: N/A
+
+- name: 'EPIC Dataset'
+  scope: Generic ICS
+  data_type: 
+    - Physical
+    - Network
+  license: Free upon request
+  url: 'http://sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/epic/'
+  reference: 'Adepu, S., et al. (2018). Epic: An electric power testbed for research and training in cyber physical systems security. In Computer Security (pp. 37-52). Springer, Cham.'
+  attacks: 
+    - No attacks
+  format: 
+    - pcap
+    - csv
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2018
+  institution: 'Singapore University (SUTD)'
+  license-specific: N/A
+
+- name: 'HAI-20.03'
+  scope: Industrial
+  data_type: Physical
+  license: Open source
+  url: 'https://github.com/icsdataset/hai'
+  reference: 'Choi, S., et al. (2020). POSTER: Expanding a Programmable CPS Testbed for Network Attack Analysis. In Proceedings of the 15th ACM Asia Conference on Computer and Communications Security (pp. 928-930).'
+  attacks: 
+    - Replay
+    - MitM
+  format: csv
+  best_ids: 'Kim, Y., & Kim, H. K. (2020, August). Anomaly Detection using Clustered Deep One-Class Classification. In 2020 15th Asia Joint Conference on Information Security (AsiaJCIS) (pp. 151-157). IEEE.'
+  f1_score: 0.79
+  accuracy: '-'
+  year: 2020
+  institution: 'ETRI'
+  license-specific: CC BY-SA 4.0
+
+
+- name: HAI-21.03
+  year: 2021
+  scope: Multi-Process ICS
+  data_type: 
+  - Physical
+  - Network
+  license: Open source
+  url: 'https://doi.org/10.48436/b0k3b-77a55'
+  reference: 'Brenner, Bernhard, et al. "Malware communication in smart factories: A network traffic data set." Computer Networks 255 (2024): 110804.'
+  attacks: 
+    - Reconnaissance
+    - Others
+  format: 
+  - pcap
+  - csv
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  institution: 'TU Wien'
+  license-specific: CC BY-SA 4.0
+
+- name: Brenner et al.
+  year: 2024
+  scope: Smart Factory
+  data_type: Network
+  license: Open source
+  url: 'https://doi.org/10.48436/b0k3b-77a55'
+  reference: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
+  attacks: 
+    - Replay
+    - MitM
+  format: csv
+  best_ids: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
+  f1_score: 0.79
+  accuracy: '-'
+  institution: 'ETRI'
+  license-specific: CC BY 4.0
+
+- name: 'HVAC_Traces'
+  scope: HVAC
+  data_type: Network
+  license: Open source
+  url: 'https://github.com/gkabasele/HVAC_Traces'
+  reference: 'Ndonda, G. K., & Sadre, R. (2019). A Public Network Trace of a Control and Automation System. arXiv preprint arXiv:1908.02118.'
+  attacks: 'No attacks'
+  format: pcap
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2019
+  institution: 'UC Louvain'
+  license-specific: N/A
+
+- name: 'Lemay Covert'
+  scope: Breakers Controller
+  data_type: Network
+  license: Open source
+  url: 'https://github.com/antoine-lemay/Modbus_dataset'
+  reference: 'Lemay, A., & Fernandez, J. M. (2016). Providing {SCADA} network data sets for intrusion detection research. In 9th Workshop on Cyber Security Experimentation and Test ({CSET} 16).'
+  attacks: 
+    - Covert Channel
+  format: 
+    - pcap
+    - csv
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2016
+  institution: 'Polytechnique de Montréal'
+  license-specific: N/A
+
+- name: 'Lemay SCADA'
+  scope: Breakers Controller
+  data_type: Network
+  license: Open source
+  url: 'https://github.com/antoine-lemay/Modbus_dataset'
+  reference: 'Lemay, A., & Fernandez, J. M. (2016). Providing {SCADA} network data sets for intrusion detection research. In 9th Workshop on Cyber Security Experimentation and Test ({CSET} 16).'
+  attacks: 
+    - 'Reconnaissance'
+    - 'Injection'
+    - 'Others'
+  format: 
+    - pcap
+    - csv
+  best_ids: 'Anton, S. D., Kanoor, S., Fraunholz, D., & Schotten, H. D. (2018, August). Evaluation of machine learning-based anomaly detection algorithms on an industrial modbus/tcp data set. In Proceedings of the 13th International Conference on Availability, Reliability and Security (pp. 1-9).'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2016
+  institution: 'Polytechnique de Montréal'
+  license-specific: N/A
+
+- name: 'Modbus SCADA \#1'
+  scope: Liquid Pump
+  data_type: Network
+  license: Open source
+  url: 'https://github.com/tjcruz-dei/ICS_PCAPS/releases/tag/MODBUSTCP%231'
+  reference: 'Frazão, I., et al. (2018). Denial of service attacks: detecting the frailties of machine learning algorithms in the classification process. In International Conference on Critical Information Infrastructures Security (pp. 230-235). Springer, Cham.'
+  attacks: 
+    - MitM
+    - DoS
+  format: pcap
+  best_ids: 'Radoglou-Grammatikis, P., Siniosoglou, I., Liatifis, T., Kourouniadis, A., Rompolos, K., & Sarigiannidis, P. (2020, September). Implementation and Detection of Modbus Cyberattacks. In 2020 9th International Conference on Modern Circuits and Systems Technologies (MOCAST) (pp. 1-4). IEEE.'
+  f1_score: 0.775
+  accuracy: '-'
+  year: 2018
+  institution: 'University of Coimbra'
+  license-specific: N/A
+
+- name: 'QUT_S7Comm'
+  scope: Mining Refinery
+  data_type: 
+    - Network
+    - Logs
+  license: Open source
+  url: 'https://github.com/qut-infosec/2017QUT_S7comm'
+  reference: 'Rodofile, N. R., et al. (2017). Process control cyber-attacks and labelled datasets on S7Comm critical infrastructure. In Australasian Conference on Information Security and Privacy (pp. 452-459). Springer, Cham.'
+  attacks: 
+    - MitM
+  format: 
+    - csv
+    - log
+    - pcap
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  year: 2017
+  institution: 'Queensland University of Technology'
+  license-specific: N/A
+
+- name: 'S4x15 ICS'
+  scope: Generic ICS
+  data_type: Network
+  license: Open source
+  url: 'https://www.netresec.com/?page=DigitalBond_S4'
+  reference: '-'
+  attacks: 
+    - Unknown
+  format: pcap
+  best_ids: 'Yu, T. C., Huang, J. Y., Liao, I. E., & Kao, K. F. (2018, November). Mining Anomaly Communication Patterns for Industrial Control Systems. In 2018 Australasian Universities Power Engineering Conference (AUPEC) (pp. 1-6). IEEE.'
+  f1_score: '~1'
+  accuracy: '-'
+  year: 2015
+  institution: 'Netresec'
+  license-specific: N/A
+
+- name: 'SWaT Dataset'
+  scope: Water Treatment
+  data_type: 
+    - Physical
+    - Network
+  license: Free upon request
+  url: 'https://itrust.sutd.edu.sg/itrust-labsdatasets/datasetinfo'
+  reference: 'Goh, J., et al. (2016). A dataset to support research in the design of secure water treatment systems. In International Conference on Critical Information Infrastructures Security (pp. 88-99). Springer, Cham.'
+  attacks: 
+    - Injection
+    - Others
+  format: 
+    - pcap
+    - csv
+    - xlsx
+  best_ids: 'Goh, J., Adepu, S., Junejo, K. N., & Mathur, A. (2016, October). A dataset to support research in the design of secure water treatment systems. In International Conference on Critical Information Infrastructures Security (pp. 88-99). Springer, Cham.'
+  f1_score: 0.889
+  accuracy: '-'
+  year: 2016
+  institution: 'Singapore University (SUTD)'
+  license-specific: N/A
+
+- name: 'WADI Dataset'
+  scope: Water Distribution
+  data_type: Physical
+  license: Free upon request
+  url: 'https://itrust.sutd.edu.sg/itrust-labsdatasets/datasetinfo'
+  reference: 'Ahmed, C. M., et al. (2017). WADI: a water distribution testbed for research in the design of secure cyber physical systems. In Proceedings of the 3rd International Workshop on Cyber-Physical Systems for Smart Water Networks (pp. 25-28).'
+  attacks: 
+    - MitM
+  format: 
+    - csv
+  best_ids: 'Abdelaty, M., Doriguzzi-Corin, R., & Siracusa, D. (2020). DAICS: A Deep Learning Solution for Anomaly Detection in Industrial Control Systems. arXiv preprint arXiv:2009.06299.'
+  f1_score: 0.8
+  accuracy: '-'
+  year: 2017
+  institution: 'Singapore University (SUTD)'
+  license-specific: N/A
+- name: "CyberCity Dataset"
+  scope: City
+  data_type: Network
+  license: "Open source"
+  format: pcap
+  attacks: 
+    - Reconnaissance
+    - Injection
+    - DoS
+    - Others
+    - MitM
+  reference: "Hink, R. C. B., et al. (2016, January). Characterization of cyberattacks aimed at integrated industrial control and enterprise systems: a case study. In 2016 IEEE 17th International Symposium on High Assurance Systems Engineering (HASE) (pp. 149-156). IEEE."
+  url: "https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltff8e7c1232f3bcbc/5fbd7be072a3526f28dbed75/sansholidayhack2013.pcap"
+  institution: "Lane Department of Computer Science and Electrical Engineering"
+  year: 2016
+
+- name: "WUSTL-IIOT-2018"
+  scope: Water Control
+  data_type: 
+    - Physical
+    - Network
+  license: Open source
+  format: csv
+  attacks:
+    - Others
+  reference: "Teixeira, M. A., et al. (2018). SCADA system testbed for cybersecurity research using machine learning approach. Future Internet, 10(8), 76."
+  url: "https://www.cse.wustl.edu/~jain/iiot/index.html"
+  institution: "Federal Institute of Education, Science, and Technology of Sao Paulo"
+  year: 2018
+  license-specific: N/A
+
+- name: "QUT_DNP3"
+  scope: Power Grid
+  data_type: 
+    - Physical
+    - Network
+  license: Open source
+  format: 
+    - pcap
+    - log
+  attacks: 
+    - Reconnaissance
+    - Replay
+    - MitM
+    - Injection
+    - Others
+  reference: "Rodofile, N. R. (2018). Generating attacks and labelling attack datasets for industrial control intrusion detection systems (Doctoral dissertation, Queensland University of Technology)."
+  url: "https://github.com/qut-infosec/2017QUT_DNP3"
+  institution: "Queensland University of Technology"
+  year: 2018
+  license-specific: N/A
+
+- name: "QUT_S7_Myers" 
+  scope: Generic ICS
+  data_type: 
+    - Physical
+    - Network
+  license: Open source
+  format: 
+    - pcap
+    - csv
+    - xlsx
+  attacks: 
+    - Injection
+    - MitM
+  reference: "Myers, D., Suriadi, S., Radke, K., & Foo, E. (2018). Anomaly detection for industrial control systems using process mining. Computers & Security, 78, 103-125."
+  url: "https://cloudstor.aarnet.edu.au/plus/index.php/s/9qFfeVmfX7K5IDH" # not working
+  institution: "Queensland University of Technology"
+  year: 2018
+  note: "URL not working as of 2026-05-18."
+
+# new entries from the new paper below
+
+- name: Kellerer et al.
+  year: 2025
+  scope: Renewable energy
+  data_type: 
+    - Network
+    - Physical
+    - Logs
+  time: 4h
+  entries: 10M
+  attacks: 
+    - MitM
+  attack_pct: '0,11%'
+  format: 
+    - pcap
+    - parquet
+  url: 'https://github.com/nbke/s7-attacks'
+  reference: 'Kellerer, N., et al. (2025). Attacks on the Siemens S7 Protocol Using an Industrial Control System Testbed. In Proceedings of the 16th ACM International Conference on Future and Sustainable
+    Energy Systems (pp. 770-779).'
+  best_ids: ''
+  f1_score: '0.995'
+  accuracy: '0.995'
+  precision: '0.994'
+  license: Open source
+  license-specific: MIT
+  institution: 'Karlsruhe Institute of Technology'
+
+- name: Mubarak et al.
+  year: 2022
+  scope: Wastewater system
+  data_type: 
+    - Network
+    - Physical
+  time: 15m
+  entries: 156K
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'DoS'
+    - 'Others'
+  attack_pct: '55,90%'
+  format: pcap
+  url: 'https://data.mendeley.com/datasets/k76xhm22yj/1'
+  reference: 'Mubarak, S., et al. (2022). Industrial datasets with ICS testbed and attack detection using machine learning techniques. Intell. Autom. Soft Comput, 31(3), 1345-1360.'
+  best_ids: ''
+  f1_score: '-'
+  accuracy: '0.965'
+  precision: '-'
+  institution: 'International Islamic University Malaysia'
+  license: Open source
+  license-specific: CC BY 4.0
+
+- name: 'ICS-Flow'
+  year: 2023
+  scope: Bottling Plant
+  data_type: 
+    - Network
+    - Physical
+    - Logs
+  time: 3h
+  entries: 25M
+  attacks: 
+    - 'Reconnaissance'
+    - 'DoS'
+    - 'Injection'
+    - 'Replay'
+  attack_pct: variable
+  format: 
+    - pcap
+    - csv
+  url: 'https://www.kaggle.com/datasets/alirezadehlaghi/icssim'
+  reference: 'Dehlaghi-Ghadim, A., et al. (2023). Anomaly Detection Dataset for Industrial Control Systems. IEEE Access.'
+  best_ids: ''
+  f1_score: '0.989'
+  accuracy: '0.995'
+  precision: '0.982'
+  license-specific: CC BY-NC-SA 4.0
+  license: Open source
+  institution: 'Mälardalens University'
+
+- name: 'ICS-NAD'
+  year: 2026
+  scope: Energy and Water
+  data_type: Network
+  time: Var.
+  entries: '245,96 GB'
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'Injection'
+    - 'DoS'
+  attack_pct: '-'
+  format:
+    - pcap
+    - csv
+  url: 'https://doi.org/10.57760/sciencedb.25938'
+  reference: 'Zhou, X., et al. (2026). A dataset collected in real-world industrial control systems for network attack detection. Scientific Data.'
+  best_ids: ''
+  f1_score: '0.99'
+  accuracy: '0.99'
+  precision: '0.997'
+  license: Open source
+  license-specificc: CC0
+  institution: 'Zhejiang University'
+
+
+- name: Deng et al.
+  year: 2023
+  scope: Pipeline
+  data_type: 
+    - Network
+    - Physical
+  time: 8h
+  entries: 11K
+  attacks: 
+    - 'Injection'
+    - 'Others'
+  attack_pct: '<2%'
+  format: csv
+  url: '-'
+  reference: 'Deng, L., et al. (2023). A New Dataset for Intrusion Detection in Industrial Control System: A Gas Pipeline Testbed Study. In Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom).
+    Wuhan University of Technology.'
+  best_ids: ''
+  f1_score: '0.82'
+  accuracy: '0.87'
+  precision: '0.97'
+  license: Not available
+  license-specific: N/A
+  institution: 'Wuhan University of Technology'
+
+- name: 'ICS-ADD'
+  year: 2024
+  scope: Water Treatment
+  data_type: 
+    - Network
+    - Physical
+    - Logs
+  time: 8m
+  entries: 217K
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'DoS'
+    - 'Injection'
+    - 'Others'
+  attack_pct: '-'
+  format: 
+  - pcap
+  - csv
+  - txt
+  url: 'https://doi.org/10.21227/4zht-tr07'
+  reference: 'Gaggero, G. B., et al. (2024). Industrial Control System-Anomaly Detection Dataset (ICS-ADD) for Cyber-Physical Security Monitoring in Smart Industry Environments. IEEE Access.'
+  best_ids: ''
+  f1_score: '-'
+  accuracy: '-'
+  precision: '-'
+  license: IEEE Dataport
+  license-specific: IEEE Dataport Terms of Use
+  institution: 'University of Genoa'
+
+- name: Huang et al.
+  year: 2023
+  scope: Smart Grid
+  data_type: 
+    - Network
+    - Logs
+  time: 11h
+  entries: 2.5M
+  attacks: 
+    - 'Reconnaissance'
+  attack_pct: '-'
+  format:
+  - pcap
+  - xlsx
+  url: 'https://doi.org/10.21227/cva5-nd75'
+  reference: 'Huang, H., et al. (2023). Validating an emulation-based cybersecurity model with a physical testbed. IEEE Transactions on Dependable and Secure Computing, 21(4), 2997-3011.'
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  precision: '-'
+  license: IEEE Dataport
+  license-specific: IEEE Dataport Terms of Use
+  institution: 'Texas A&M University'
+
+
+- name: Cyber4OT
+  year: 2025
+  scope: Generic ICS
+  data_type: Network
+  time: Var.
+  entries: 4.25M
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'Others'
+  attack_pct: '93%'
+  format: pcap
+  url: 'https://zenodo.org/records/15005190'
+  reference: 'Cabaj, K., et al. (2025). Cyber4OT dataset: Network traces for cyber-security vulnerability evaluation in industrial control systems. SoftwareX, 31, 102196.'
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  precision: '-'
+  license: Open source
+  license-specific: Creative Commons Attribution Non Commercial 4.0
+  institution: 'Warsaw University of Technology'
+
+
+- name: 'Al-Duwairi et al.'
+  year: 2025
+  scope: Waste Incineration
+  data_type: Network
+  time: 14d
+  entries: 19M
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'DoS'
+    - 'Injection'
+    - 'Others'
+  attack_pct: '0,84%'
+  format: pcap
+  url: 'https://data.mendeley.com/datasets/vpcr4wpgfd/4'
+  reference: 'Al-Duwairi, B., et al. (2025). Dataset of SCADA traffic captures from a medical waste incinerator with injected cyberattacks. Data in Brief.'
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  precision: '-'
+  license: Open source
+  license-specific: CC BY 4.0
+  institution: 'Jordan University of Science and Technology'
+
+- name: Xuelei Wang
+  year: 2023
+  scope: Smart Grid
+  data_type: 
+    - Network
+    - Physical
+  time: 6h
+  entries: 79K
+  attacks: 
+    - 'Replay'
+    - 'Injection'
+    - 'Others'
+  attack_pct: '19,20%'
+  format: 
+    - pcap
+    - csv
+    - xlsx
+  url: 'https://dx.doi.org/10.21227/2kh3-bm54'
+  reference: 'Wang, X. (2023). Detecting Cyber Attacks from Untrusted Components in Smart Electricity Substations (Doctoral dissertation). Queensland University of Technology.'
+  best_ids: ''
+  f1_score: 'SV:0,973 / GOOSE:0,996'
+  accuracy: '-'
+  precision: 'SV:0,982 / GOOSE:0,996'
+  license: IEEE Dataport
+  license-specific: IEEE Dataport Terms of Use
+  institution: 'Queensland University of Technology'
+
+
+- name: CIC Modbus
+  year: 2023
+  scope: Smart Grid
+  data_type: 
+    - Network
+    - Physical
+    - Logs
+  time: 15m x test
+  entries: 15.8GB / 67M
+  attacks: 
+    - 'Reconnaissance'
+    - 'Injection'
+    - 'DoS'
+    - 'Replay'
+    - 'Others'
+  attack_pct: variable
+  format: 
+    - pcap
+    - csv
+  url: 'https://www.unb.ca/cic/datasets/modbus-2023.html'
+  reference: 'Boakye-Boateng, K., Ghorbani, A. A. & Lashkari, A. H. (2023). Securing substations with trust, risk posture, and multi-agent systems: A comprehensive approach. In 2023 20th Annual International
+    Conference on Privacy, Security and Trust (PST) (pp. 1-12). IEEE.'
+  best_ids: ''
+  f1_score: '0.95'
+  accuracy: '0.95'
+  precision: '0.95'
+  license: Open source
+  license-specific: CC BY 4.0
+  institution: 'University of New Brunswick'
+
+- name: Signals and Symptoms
+  year: 2024
+  scope: Transportation
+  data_type: 
+    - Network
+    - Physical
+    - Logs
+  time: 2d
+  entries: 35GB
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'DoS'
+    - 'Others'
+  attack_pct: '-'
+  format: 
+    - pcap
+    - csv
+    - e01
+  url: 'https://doi.org/10.5281/zenodo.15536351'
+  reference: 'Yusof, A., et al. (2024). Signals and Symptoms: ICS Attack Dataset From Railway Cyber Range. In Technical Report, National University of Singapore.'
+  best_ids: '-'
+  f1_score: '-'
+  accuracy: '-'
+  precision: '-'
+  institution: 'National University of Singapore'
+  license: Open source
+  license-specific: CC BY 4.0
+
+- name: WDT
+  year: 2021
+  scope: Water Distribution
+  data_type: 
+    - Network
+    - Physical
+  time: 2h
+  entries: '24,3M'
+  attacks: 
+    - 'Reconnaissance'
+    - 'MitM'
+    - 'DoS'
+    - 'Injection'
+    - 'Others'
+  attack_pct: '15,85%'
+  format: 
+    - pcap
+    - csv
+    - xlsx
+  url: 'https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing'
+  reference: 'Faramondi L. et al. (2021). A Hardware-in-the-Loop Water Distribution Testbed Dataset for Cyber-Physical Security Testing. In IEEE Access, vol. 9, pp. 122385-122396.'
+  best_ids: Random Forest
+  f1_score: 'PD:0,97 / ND: 0,54'
+  accuracy: 'PD:0,99 / ND: 0,75'
+  precision: 'PD:0,95 / ND: 0,56'
+  license: IEEE Dataport
+  license-specific: IEEE Dataport Terms of Use
+  institution: 'Campus Biomedico University of Rome'

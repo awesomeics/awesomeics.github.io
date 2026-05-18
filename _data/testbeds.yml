@@ -1,0 +1,1151 @@
+
+
+- name: "Davis et al."
+  institution: "University of Illinois"
+  scope: "Power Grid"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Davis, C. M., et al. (2006). SCADA cyber security testbed development. In 2006 38th North American Power Symposium (pp. 483-488). IEEE."
+  year: 2006
+  protocol:
+    - "Modbus/TCP"
+    - "Proprietary"
+
+- name: "EPIC (iTrust)"
+  institution: "Singapore University (SUTD)"
+  scope: "Electric Power"
+  category: "Physical"
+  license: "Collaborations"
+  reference: "Adepu, S., et al. (2018). Epic: An electric power testbed for research and training in cyber physical systems security. In Computer Security (pp. 37-52). Springer, Cham."
+  year: 2018
+  protocol:
+    - "IEC 61850"
+    - "Modbus/TCP"
+
+- name: "EPIC (IPSC)"
+  institution: "IPSC, Ispra"
+  scope: "General CPS"
+  category: "Hybrid"
+  license: "Not available"
+  reference: "Siaterlis, C., et al. (2013). EPIC: a testbed for scientifically rigorous cyber-physical security experimentation. IEEE Transactions on Emerging Topics in Computing, 1(2), 319-330."
+  year: 2013
+  protocol:
+    - "Modbus/TCP"
+
+- name: "EPS-ICS"
+  institution: "CNIT SEC"
+  scope: "General ICS"
+  category: "Hybrid"
+  license: "Not available"
+  reference: "Gao, H., et al. (2013). The design of ics testbed based on emulation, physical, and simulation (eps-ics testbed). In 2013 Ninth International Conference on Intelligent Information Hiding and Multimedia Signal Processing (pp. 420-423). IEEE."
+  year: 2013
+  protocol:
+    - "Not specified"
+
+- name: "Farooqui et al."
+  institution: "National University of Sciences and Technology"
+  scope: "Generic CPS"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Farooqui, A. A., et al. (2014, October). Cyber security backdrop: A scada testbed. In 2014 IEEE Computers, Communications and IT Applications Conference (pp. 98-103). IEEE."
+  year: 2014
+  protocol:
+    - "Not specified" 
+
+- name: "Genge et al."
+  institution: "IPSC, Ispra"
+  scope: "Generic ICS"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Genge, B., et al. (2012). A cyber-physical experimentation environment for the security analysis of networked industrial control systems. Computers & Electrical Engineering, 38(5), 1146-1161."
+  year: 2012
+  protocol:
+    - "Modbus/TCP"
+    - "Profinet"
+    - "DNP3"
+
+- name: "Gillen et al."
+  institution: "Oak Ridge National Laboratory"
+  scope: "Cooling System"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: 'Gillen, R. E., et al. (2020, August). Design and Implementation of Full-Scale Industrial Control System Test Bed for Assessing Cyber-Security Defenses. In 2020 IEEE 21st International Symposium on" A World of Wireless, Mobile and Multimedia Networks"(WoWMoM) (pp. 341-346). IEEE.'
+  year: 2020
+  protocol:
+    - "Ethernet/IP"
+
+- name: "Giani et al."
+  institution: "-"
+  scope: "Generic ICS"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Giani, A., et al. (2008). A testbed for secure and robust SCADA systems. ACM SIGBED Review, 5(2), 1-4."
+  year: 2008
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: "HAI Testbed"
+  institution: "The Affiliated Institute of ETRI"
+  scope: "Industrial"
+  category: "Physical"
+  license: "Open description"
+  reference: "Shin, H. K., et al. (2019). Implementation of Programmable {CPS} Testbed for Anomaly Detection. In 12th {USENIX} Workshop on Cyber Security Experimentation and Test ({CSET} 19)."
+  year: 2019
+  protocol:
+    - "Not specified"
+
+- name: "Hui Nuclear"
+  institution: "CSIT, Queen's University"
+  scope: "Nuclear Reactor"
+  category: "Hybrid"
+  license: "Not available"
+  reference: "Hui, H., et al. (2019). ICS Interaction Testbed: A Platform for Cyber-Physical Security Research. In 6th International Symposium for ICS & SCADA Cyber Security Research 2019 6 (pp. 89-96)."
+  year: 2019
+  protocol:
+    - "S7Comm"
+    - "Profinet"
+    - "Proprietary"
+
+- name: "HYDRA"
+  institution: "Università Roma Tre"
+  scope: "Water Distribution"
+  category: "Physical"
+  license: "Open description"
+  reference: "Bernieri, G., et al. (2016). A testbed for integrated fault diagnosis and cyber security investigation. In 2016 International Conference on Control, Decision and Information Technologies (CoDIT) (pp. 454-459). IEEE."
+  year: 2016
+  protocol: 
+    - "Modbus/TCP"
+
+- name: "Jarmakiewicz et al."
+  institution: "Military University of Technology"
+  scope: "Power Grid"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: "Morris, T. H., et al. (2015). Industrial control system simulation and data logging for intrusion detection system research. 7th annual southeastern cyber security summit, 3-4."
+  year: 2015
+  protocol:
+    - "IEC 61850"
+    - "IEC 104"
+
+- name: "Jin et al."
+  institution: "University of Illinois at Urbana-Champaign"
+  scope: "Generic ICS"
+  category: "Virtual"
+  license: "Open Description"
+  reference: "Jin, D., et al. (2011, December). An event buffer flooding attack in DNP3 controlled SCADA systems. In Proceedings of the 2011 Winter Simulation Conference (WSC) (pp. 2614-2626). IEEE."
+  year: 2011
+  protocol:
+    - "DNP3"
+
+- name: "SCADA-SST"
+  year: 2016
+  institution: "King Fahd University of Petroleum & Minerals"
+  scope: "2 different ICS"
+  category: "Virtual"
+  license: "Open-Source"
+  reference: "Ghaleb, A., et al. (2016, December). SCADA-SST: a SCADA security testbed. In 2016 World Congress on Industrial Control Systems Security (WCICSS) (pp. 1-6). IEEE."
+  protocol:
+    - "Modbus/TCP"
+
+- name: "Singhet et al."
+  year: 2015
+  institution: "Centre for Development of Advanced Computing"
+  scope: "Power Grid"
+  category: "Virtual"
+  license: "Open Description"
+  reference: "Singh, P., et al. (2015, August). A testbed for SCADA cyber security and intrusion detection. In 2015 International Conference on Cyber Security of Smart Cities, Industrial Control System and Communications (SSIC) (pp. 1-6). IEEE."
+  protocol:
+    - "DNP3"
+    - "IEC 104"
+
+- name: Kaouk et al.
+  institution: "University of Grenoble"
+  scope: "Generic ICS"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: "Kaouk, M., et al. (2018, October). A testbed for cybersecurity assessment of industrial and iot-based control systems."
+  year: 2018
+  protocol:
+    - "Modbus/TCP"
+
+- name: "KYPO4INDUSTRY"
+  institution: "Masaryk University"
+  scope: "Generic ICS (pedagogy)"
+  category: "Hybrid"
+  license: "Open description"
+  reference: "Čeleda, P., et al. (2020, February). KYPO4INDUSTRY: A Testbed for Teaching Cybersecurity of Industrial Control Systems. In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (pp. 1026-1032)."
+  year: 2020
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: Lee et al.
+  institution: "Ajou University"
+  scope: "Power Plant"
+  category: "Virtual"
+  license: "Open Description"
+  reference: "Lee, S., et al. (2018). Design and implementation of cybersecurity testbed for industrial IoT systems. The Journal of Supercomputing, 74(9), 4506-4520."
+  year: 2018
+  protocol:
+    - "DNP3"
+    - "IEC 61850"
+
+- name: LegoSCADA
+  institution: "Universite Paris-Saclay"
+  scope: "Vehicular"
+  category: "Hybrid"
+  license: "Open-Source"
+  reference: "Rubio-Hernan, J., Rodolfo-Mejias, J., & Garcia-Alfaro, J. (2016, September). Security of cyber-physical systems. In International Workshop on the Security of Industrial Control Systems and Cyber-Physical Systems (pp. 3-18). Springer, Cham."
+  year: 2016
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: "Lancaster's testbed"
+  institution: "Lancaster University"
+  scope: "Generic ICS"
+  category: "Physical"
+  license: "Collaborations"
+  reference: "Green, B., et al. (2017). Pains, gains and PLCs: ten lessons from building an industrial control systems testbed for security research. In 10th {USENIX} Workshop on Cyber Security Experimentation and Test ({CSET} 17)."
+  year: 2017
+  protocol:
+    - "Modbus/TCP"
+    - "ISO-TSAP/S7"
+    - "DNP3"
+    - "OPC"
+    - "Ethernet/IP"
+    - "WirelessHART"
+
+- name: "LICSTER"
+  institution: "Hochschule Augsburg"
+  scope: "Generic ICS"
+  category: "Physical"
+  license: "Open-Source"
+  reference: "Sauer, F., et al. (2019). LICSTER--A Low-cost ICS Security Testbed for Education and Research. arXiv preprint arXiv:1910.00303."
+  resource: 'https://github.com/thainnos/LICSTER'
+  year: 2019
+  protocol:
+    - "Modbus/TCP"
+
+- name: "Maynard SCADA"
+  institution: "CSIT, Queen's University"
+  scope: "General ICS"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS & SCADA Cyber Security Research 2018 5 (pp. 92-101)."
+  year: 2018
+  protocol:
+    - "OPC UA"
+    - "IEC 104"
+
+- name: Noorizadeh et al.
+  institution: "Qatar University"
+  scope: "Chemical Process"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: "Noorizadeh, M., et al. (2021). A Cyber-Security Methodology for a Cyber-Physical Industrial Control System Testbed. IEEE Access, 9, 16239-16253."
+  year: 2021
+  protocol:
+    - "Profinet"
+
+- name: "MSICST"
+  institution: "University of Science and Technology of China"
+  scope: "4 Different ICS"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials & Continua, 60(2), 691-705."
+  year: 2019
+  protocol:
+    - "Modbus/TCP"
+    - "S7Comm"
+    - "Ethernet/IP"
+
+- name: "Microgrid"
+  institution: "The Ohio State University"
+  scope: "Electric Power"
+  category: "Hybrid"
+  license: "Open description"
+  reference: "Guo, F., et al. (2013). Design and development of a reconfigurable hybrid Microgrid testbed. In 2013 IEEE Energy Conversion Congress and Exposition (pp. 1350-1356). IEEE."
+  year: 2013
+  protocol:
+    - "Not specified"
+
+- name: "MiniCPS"
+  institution: "Singapore University (SUTD)"
+  scope: "General CPS"
+  category: "Virtual"
+  license: "Open-source"
+  reference: "Antonioli, D., & Tippenhauer, N. O. (2015). MiniCPS: A toolkit for security research on CPS networks. In Proceedings of the First ACM workshop on cyber-physical systems-security and/or privacy (pp. 91-100)."
+  year: 2015
+  protocol:
+    - "Ethernet/IP"
+    - "Modbus/TCP"
+    - "CIP"
+
+- name: "Mississipi Ethernet"
+  institution: "Mississippi State University"
+  scope: "Steel Rolling, Smart Grid"
+  category: "Physical"
+  license: "Not available"
+  reference: "Morris, T., et al. (2011). A testbed for SCADA control system cybersecurity research and pedagogy. In Proceedings of the Seventh Annual Workshop on Cyber Security and Information Intelligence Research (pp. 1-1)."
+  year: 2011
+  protocol:
+    - "Ethernet/IP"
+
+- name: "Mississipi Serial"
+  institution: "Mississippi State University"
+  scope: "Industrial operations"
+  category: "Physical"
+  license: "University"
+  reference: "Morris, T., et al. (2011). A testbed for SCADA control system cybersecurity research and pedagogy. In Proceedings of the Seventh Annual Workshop on Cyber Security and Information Intelligence Research (pp. 1-1)."
+  year: 2011
+  protocol:
+    - "Modbus/ASCII"
+    - "Modbus/RTU"
+    - "DNP3"
+
+- name: "Gas Pipeline testbed"
+  institution: "Mississippi State University"
+  scope: "Gas Pipeline"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Morris, T. H., et al. (2015). Industrial control system simulation and data logging for intrusion detection system research. 7th annual southeastern cyber security summit, 3-4."
+  year: 2015
+  protocol:
+    - "Modbus/TCP"
+
+- name: "NIST"
+  institution: "U.S. Department of Commerce"
+  scope: "Industrial"
+  category: "Hybrid"
+  license: "Collaborations"
+  reference: "Candell, R., et al. (2015). An industrial control system cybersecurity performance testbed. National Institute of Standards and Technology. NISTIR, 8089."
+  year: 2015
+  protocol:
+    - "Modbus/TCP"
+    - "Ethernet/IP"
+
+- name: "PNNL"
+  institution: "Pacific Northwest National Lab."
+  scope: "Generic CPS"
+  category: "Hybrid"
+  license: "Open description"
+  reference: "Edgar, T., et al. (2011). Towards an experimental testbed facility for cyber-physical security research. In Proceedings of the Seventh Annual Workshop on Cyber Security and Information Intelligence Research (pp. 1-1)."
+  year: 2011
+  protocol:
+    - "Not specified"
+
+- name: "PowerCyber"
+  institution: "Iowa State University"
+  scope: "Power System"
+  category: "Physical"
+  license: "Open description"
+  reference: "Hahn, A., et al. (2010). Development of the PowerCyber SCADA security testbed. In Proceedings of the sixth annual workshop on cyber security and information intelligence research (pp. 1-4)."
+  year: 2010
+  protocol:
+    - "IEC 61850"
+    - "DNP3"
+
+- name: "Reavers and Morris"
+  institution: "Georgia Institute of Tech."
+  scope: "General ICS"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Reaves, B., & Morris, T. (2012). An open virtual testbed for industrial control system security research. International Journal of Information Security, 11(4), 215-229."
+  year: 2012
+  protocol:
+    - "Modbus/TCP"
+    - "Modbus/RTU"
+
+- name: Queiroz et al.
+  year: 2009
+  institution: "RMIT University"
+  scope: "Water Distribution"
+  category: "Hybrid"
+  license: "Open Description"
+  reference: "Queiroz, C., et al. (2009, October). Building a SCADA security testbed. In 2009 Third International Conference on Network and System Security (pp. 357-364). IEEE."
+  protocol:
+    - "Modbus/TCP"
+
+- name: Sayegh et al.
+  year: 2013
+  institution: "American University of Beirut"
+  scope: "Generic ICS"
+  category: "Physical"
+  license: "Open Description"
+  reference: "Sayegh, N., et al. (2013, June). Internal security attacks on SCADA systems. In 2013 Third International Conference on Communications and Information Technology (ICCIT) (pp. 22-27). IEEE."
+  protocol:
+    - "FINS"
+
+- name: "SCADASim"
+  institution: "RMIT University, Melbourne"
+  scope: "Generic ICS"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Queiroz, C., et al. (2011). SCADASim—A framework for building SCADA simulations. IEEE Transactions on Smart Grid, 2(4), 589-597."
+  year: 2011
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: "SCADAVT"
+  institution: "RMIT University, Melbourne"
+  scope: "Water Network System"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Almalawi, A., et al. (2013). SCADAVT-A framework for SCADA security testbed based on virtualization technology. In 38th Annual IEEE Conference on Local Computer Networks (pp. 639-646). IEEE."
+  year: 2013
+  protocol:
+    - "Modbus/TCP"
+
+- name: "SGTB Smart Grid Test Bed"
+  institution: "Idaho National Laboratory"
+  scope: "Power Grid"
+  category: "Physical"
+  license: "Not available"
+  reference: "Moreno-Garcia, I. M., et al. (2017). Development and application of a smart grid test bench. Journal of Cleaner Production, 162, 45-60."
+  year: 2017
+  protocol:
+    - "IEC 61850"
+
+- name: "RICS-el"
+  year: 2018
+  institution: "Swedish Defence Research Agency"
+  scope: "Power Grid"
+  category: "Virtual"
+  license: "Open Description"
+  reference: "Almgren, M., et al. (2018, September). RICS-el: building a national testbed for research and training on SCADA security (short paper). In International Conference on Critical Information Infrastructures Security (pp. 219-225). Springer, Cham."
+  protocol:
+    - "IEC 104"
+
+- name: "SNL Testbed"
+  institution: "Sandia National Laboratories"
+  scope: "Generic ICS"
+  category: "Hybrid"
+  license: "Open description"
+  reference: "Urias, V., et al. (2012, October). Supervisory Command and Data Acquisition (SCADA) system cyber security analysis using a live, virtual, and constructive (LVC) testbed. In MILCOM 2012-2012 IEEE Military Communications Conference (pp. 1-8). IEEE."
+  year: 2012
+  protocol: 
+    - "Modbus/TCP"
+    - "IEC 104"
+    - "DNP3"
+
+- name: "SWaT"
+  institution: "Singapore University (SUTD)"
+  scope: "Water Treatment"
+  category: "Physical"
+  license: "Collaborations"
+  reference: "Mathur, A. P., & Tippenhauer, N. O. (2016, April). SWaT: a water treatment testbed for research and training on ICS security. In 2016 International Workshop on Cyber-physical Systems for Smart Water Networks (CySWater) (pp. 31-36). IEEE."
+  year: 2016
+  protocol: 
+    - "Ethernet/IP"
+    - "CIP"
+
+- name: "TASSCS"
+  institution: "University of Arizona"
+  scope: "Power System and generic"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Mallouhi, M., et al. (2011). A testbed for analyzing security of SCADA control systems (TASSCS). In ISGT 2011 (pp. 1-7). IEEE."
+  year: 2011
+  protocol:
+    - "Modbus/TCP"
+
+- name: "Turbo-Gas Power Plant (T-GPP)"
+  institution: "IPSC, Ispra"
+  scope: "Power Plant"
+  category: "Physical"
+  license: "Not available"
+  reference: "Fovino, I. N., et al. (2010, May). An experimental platform for assessing SCADA vulnerabilities and countermeasures in power plants. In 3rd International Conference on Human System Interaction (pp. 679-686). IEEE."
+  year: 2010
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: "VPST"
+  institution: "University of Illinois"
+  scope: "Power Grid"
+  category: "Hybrid"
+  license: "Open description"
+  reference: "Bergman, D. C., et al. (2009). The Virtual Power System Testbed and Inter-Testbed Integration. In CSET."
+  year: 2009
+  protocol:
+    - "Ethernet/IP"
+
+- name: "VTET"
+  institution: "SKL-MEAC, Zhengzhou"
+  scope: "Chemical Process"
+  category: "Virtual"
+  license: "Not available"
+  reference: "Xie, Y., et al. (2018). VTET: A Virtual Industrial Control System Testbed for Cyber Security Research. In 2018 Third International Conference on Security of Smart Cities, Industrial Control System and Communications (SSIC) (pp. 1-7). IEEE."
+  year: 2018
+  protocol: 
+    - "Modbus/TCP"
+    - "S7Comm"
+    - "OPC"
+
+- name: "WADI"
+  institution: "Singapore University (SUTD)"
+  scope: "Water Distribution"
+  category: "Physical"
+  license: "Collaborations"
+  reference: "Ahmed, C. M., et al. (2017). WADI: a water distribution testbed for research in the design of secure cyber physical systems. In Proceedings of the 3rd International Workshop on Cyber-Physical Systems for Smart Water Networks (pp. 25-28)."
+  year: 2017
+  protocol:
+    - "Modbus/TCP"
+
+- name: "Wang et al."
+  institution: "-"
+  scope: "Generic ICS"
+  category: "Virtual"
+  license: "Open description"
+  reference: "Wang, C., et al. (2010). A simulation environment for SCADA security analysis and assessment. In 2010 International Conference on Measuring Technology and Mechatronics Automation (Vol. 1, pp. 342-347). IEEE."
+  year: 2010
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: "CyberCity Testbed"
+  year: 2016
+  institution: "SANS Institute"
+  scope: "City"
+  category: "Hybrid"
+  license: "Education"
+  reference: "Hink, R. C. B., et al. (2016, January). Characterization of cyberattacks aimed at integrated industrial control and enterprise systems: a case study. In 2016 IEEE 17th International Symposium on High Assurance Systems Engineering (HASE) (pp. 149-156). IEEE."
+  protocol:
+    - "Modbus/TCP"
+    - "Ethernet/IP"
+
+# new entries from the new paper below
+
+- name: Kellerer et al.
+  year: 2025
+  institution: KIT
+  nation: Germany
+  scope: Renewable Energy
+  category: Hybrid
+  physics: S
+  license: "Open source"
+  cost: High
+  reference: 'Kellerer, N., et al. (2025). Attacks on the Siemens S7 Protocol Using an Industrial Control System Testbed. In Proceedings of the 16th ACM International Conference on Future and Sustainable
+    Energy Systems (pp. 770-779).'
+  resource: 'https://github.com/nbke/s7-attacks'
+  protocol:
+    - "Modbus/TCP"
+    - "S7Comm"
+
+- name: 'HIL-RESIST'
+  year: 2025
+  institution: 'Vanderbilt University & Siemens Corporation'
+  nation: USA
+  scope: Energy
+  category: Hybrid
+  physics: S
+  license: "Open description"
+  cost: Medium
+  reference: 'Chhokra, A. D., et al. (2025). HIL-RESIST: Hardware-In-the-Loop testbed for RESilience evaluation against Integrated System Threats in power systems. In Proceedings of the International Workshop
+    on Middleware for IT/OT Integration (pp. 5-8).'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+
+- name: Sicard et al.
+  year: 2022
+  institution: NCL
+  nation: France
+  scope: Naval Defense
+  category: Physical
+  physics: R
+  license: Not available
+  cost: High
+  reference: 'Sicard, F., Hotellier, E. & Francq, J. (2022). An industrial control system physical testbed for naval defense cybersecurity research. In 2022 IEEE European Symposium on Security and Privacy
+    Workshops (EuroS&PW) (pp. 413-422). IEEE.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+    - "Profinet"
+    - "Modbus/RTU"
+
+- name: Gholap et al.
+  year: 2025
+  institution: IIT Bombay
+  nation: India
+  scope: Chemical
+  category: Hybrid
+  physics: R
+  license: "Open description"
+  cost: Low
+  reference: 'Gholap, Y., Yeola, P. & Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
+    IEEE.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+    - "OPC UA"
+
+- name: Mubarak et al.
+  year: 2022
+  institution: IIUM
+  nation: Malaysia
+  scope: Wastewater Systems
+  category: Physical
+  physics: M
+  license: 
+    - "Collaborations"
+    - "Educational"
+  cost: Medium
+  reference: 'Mubarak, S., et al. (2022). Industrial datasets with ICS testbed and attack detection using machine learning techniques. Intell. Autom. Soft Comput, 31(3), 1345-1360.'
+  resource: '-'
+  protocol:
+    - "S7Comm"
+    - "Modbus/TCP"
+
+- name: SWaP
+  year: 2023
+  institution: 'University of Strathclyde & Newcastle University'
+  nation: UK
+  scope: Water Management Systems
+  category: Physical
+  physics: R
+  license: 
+    - "Collaborations"
+    - "Educational"
+  cost: Medium
+  reference: 'Calder, M., Ahmed, M. & Nagaraja, S. (2023). SWaP: A Water Process Testbed for ICS Security Research. In 2023 IEEE International Conference on Omni-layer Intelligent Systems (COINS) (pp. 1-4).
+    IEEE.'
+  resource: '-'
+  protocol:
+    - "S7Comm"
+    - "Ethernet/IP"
+
+- name: Huang et al.
+  year: 2023
+  institution: 'TAMU & SNL'
+  nation: USA
+  scope: Smart Grid
+  category: Virtual
+  physics: S
+  license: "Open description"
+  cost: High
+  reference: 'Huang, H., et al. (2023). Validating an emulation-based cybersecurity model with a physical testbed. IEEE Transactions on Dependable and Secure Computing, 21(4), 2997-3011.'
+  resource: '-'
+  protocol:
+    - "DNP3"
+
+- name: McGuan et al.
+  year: 2023
+  institution: Cleveland State University
+  nation: USA
+  scope: Chemical and Manufacturing
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'McGuan, C., Yu, C. & Lin, Q. (2023). Towards low-barrier cybersecurity research and education for industrial control systems. In 2023 IEEE International Conference on Intelligence and Security
+    Informatics (ISI) (pp. 1-6). IEEE.'
+  resource: 
+    - 'https://github.com/csmcguan/mintwin-svm-grfics11'
+    - 'https://github.com/csmcguan/mintwin-svm-factoryio'
+  protocol:
+    - "Modbus/TCP"
+
+
+- name: GRFICS
+  year: 2018
+  institution: Georgia Tech
+  nation: USA
+  scope: Chemical Process
+  category: Virtual
+  physics: S
+  license: "Open-Source"
+  cost: Low
+  reference: 'Formby, D., et al. (2018). Lowering the Barriers to Industrial Control System Security with {GRFICS}. In 2018 {USENIX} Workshop on Advances in Security Education ({ASE} 18).'
+  resource: 'https://github.com/djformby/GRFICS'
+  protocol:
+    - "Modbus/TCP"
+
+- name: "Ahmed et al."
+  year: 2016
+  institution: University of New Orleans
+  nation: USA
+  scope: 3 Different ICS
+  category: Physical
+  license: "Open Description"
+  cost: Medium
+  reference: 'Ahmed, I., et al. (2016, December). A SCADA system testbed for cybersecurity and forensic research and pedagogy. In Proceedings of the 2nd Annual Industrial Control System Security Workshop (pp. 1-9).'
+  resource: '-'
+  protocol: 
+    - "Modbus"
+    - "Ethernet/IP"
+    - "Profinet"
+
+- name: Alves et al.
+  year: 2016
+  institution: University of Alabama in Huntsville
+  nation: USA
+  scope: Gas Pipeline
+  category: Hybrid
+  license: "Open Description"
+  cost: Medium
+  reference: 'Alves, T., et al. (2016, December). Virtualization of industrial control system testbeds for cybersecurity. In Proceedings of the 2nd Annual Industrial Control System Security Workshop (pp. 10-14).'
+  protocol:
+    - "IEC 61850"
+
+- name: Blazek et al.
+  year: 2019
+  institution: Brno University of Technology
+  nation: Czech Republic
+  scope: Power Grid
+  category: Physical
+  license: "Open Description"
+  cost: Medium
+  reference: 'Blazek, P., et al. (2019). Development of cyber-physical security testbed based on IEC 61850 architecture. Elektronika ir Elektrotechnika, 25(5), 82-87.'
+  protocol:
+    - "IEC 61850"
+
+- name: BU-Testbed
+  year: 2016
+  institution: Binghamton University
+  nation: USA
+  scope: Power Plant
+  physics: R
+  category: Physical
+  license: "Open Description"
+  cost: Medium
+  reference: 'Korkmaz, E., et al. (2016, June). Industrial control systems security testbed. In 11th Annual Symposium on Information Assurance.'
+  protocol:
+    - "Ethernet/IP"
+
+- name: "Teixeira et. al"
+  year: 2018
+  institution: Federal Institute of Education, Science, and Technology, Sao Paulo
+  nation: Brazil
+  scope: Water Distribution
+  physics: R
+  category: Physical
+  license: "Open Description"
+  cost: Medium
+  reference: 'Teixeira, M. A., et al. (2018). SCADA system testbed for cybersecurity research using machine learning approach. Future Internet, 10(8), 76.'
+  protocol:
+    - "Modbus/TCP"
+
+- name: "CockpitCI Extention"
+  year: 2016
+  institution: University of Coimbra
+  nation: Portugal
+  physics: S
+  scope: Power Grid
+  category: Hybrid
+  license: "Open Description"
+  cost: Medium
+  reference: 'Cruz, T., et al. (2016). A cybersecurity detection framework for supervisory control and data acquisition systems. IEEE Transactions on Industrial Informatics, 12(6), 2236-2246.'
+  protocol:
+    - "Modbus/TCP"
+
+- name: Yang et al.
+  year: 2014
+  institution: Queen's University Belfast
+  nation: UK
+  scope: Power Grid
+  physics: R
+  category: Physical
+  license: "Open Description"
+  cost: Medium
+  reference: 'Yang, Y., et al. (2014). Multiattribute SCADA-specific intrusion detection system for power networks. IEEE Transactions on Power Delivery, 29(3), 1092-1102.'
+  protocol:
+    - "IEC 104"
+
+- name: Zhang et al.
+  year: 2019
+  institution: University of Tennessee
+  nation: USA
+  scope: Nuclear Plant
+  category: Physical
+  physics: R
+  license: "Open Description"
+  cost: Medium
+  reference: 'Zhang, F., et al. (2019). Multilayer data-driven cyber-attack detection system for industrial control systems based on network, system, and process data. IEEE Transactions on Industrial Informatics, 15(7), 4362-4369.'
+  protocol:
+    - "Not specified"
+
+- name: "SCASS-v2"
+  year: 2024
+  institution: University of Naples Federico II
+  nation: Italy
+  scope: Energy
+  category: Hybrid
+  physics: Variabile
+  license: "Open source"
+  cost: Medium
+  reference: 'Cuorvo, R., et al. (2024). Securing industrial systems: A testbed for cyber-defense evaluation and data collection. In 2024 20th International Conference on Network and Service Management
+    (CNSM) (pp. 1-7). IEEE.'
+  resource: 'https://github.com/NS-unina/SCASS-v2'
+  protocol:
+    - "Modbus/TCP"
+
+- name: 'ICS-SimLab'
+  year: 2025
+  institution: Curtin University
+  nation: Australia
+  scope: 'Energy, Water, Manufacturing'
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Brown, J., et al. (2025). ICS-SimLab: A Containerized Approach for Simulating Industrial Control Systems for Cyber Security Research. In 2025 IEEE Conference on Communications and Network
+    Security (CNS) (pp. 1-6). IEEE.'
+  resource: 'https://github.com/JaxsonBrownie/ICS-SimLab'
+  protocol:
+    - "Modbus/TCP"
+    - "Modbus/RTU"
+
+- name: 'HINT-Sec'
+  year: 2025
+  institution: 'KIINNC & University of Suwon'
+  nation: Republic of Korea
+  scope: Nuclear Energy
+  category: Hybrid
+  physics: S
+  license: "Open description"
+  cost: High
+  reference: 'Nam, K., Kwon, K. & Kim, A. (2025). HINT-Sec: Hardware-in-the-loop nuclear power plant testbed for cyber security. Progress in Nuclear Energy, 180, 105600.'
+  resource: '-'
+  protocol:
+    - "Profibus"
+    - "Proprietary"
+
+- name: Koganti et al.
+  institution: University of Idaho
+  scope: Power Grid
+  category: Virtual
+  license: "Open Description"
+  reference: "Koganti, V. S., et al. (2017, October). A virtual testbed for security management of industrial control systems. In 2017 12th International Conference on Malicious and Unwanted Software (MALWARE) (pp. 85-90). IEEE."
+  year: 2017
+  protocol:
+    - "Modbus/TCP"
+
+- name: Kim et al.
+  institution: National Security Research Institute
+  year: 2019
+  scope: Cyber-Physical Battlefield Platform
+  category: Hybrid
+  license: "Open description"
+  physics: R
+  cost: High
+  reference: 'Kim, J., et al. (2019, May). Cyber-Physical Battlefield Platform for Large-Scale Cybersecurity Exercises. In 2019 11th International Conference on Cyber Conflict (CyCon) (Vol. 900, pp. 1-19). IEEE.'
+  protocol:
+    - "Not specified"
+
+- name: Koutsandria et al.
+  institution: Sapienza University of Rome
+  year: 2015
+  scope: Power Grid
+  category: Hybrid
+  license: "Open Description"
+  physics: R
+  cost: Medium
+  reference: 'Koutsandria, G., et al. (2015, October). A real-time testbed environment for cyber-physical security on the power grid. In Proceedings of the First ACM Workshop on Cyber-Physical Systems-Security and/or PrivaCy (pp. 67-78).'
+  protocol:
+    - "Modbus/TCP"
+
+- name: Aghamolki et al.
+  institution: University of South Florida
+  year: 2015
+  scope: Power Grid
+  category: Hybrid
+  license: "Open Description"
+  cost: Medium
+  reference: 'Aghamolki, H. G., et al. (2015, October). A hardware-in-the-loop SCADA testbed. In 2015 North American Power Symposium (NAPS) (pp. 1-6). IEEE.'
+  protocol:
+    - "Modbus/TCP"
+    - "DNP3"
+
+- name: SPHERE CPS
+  year: 2025
+  institution: 'USC-IS & Northeastern University & University of Utah'
+  nation: USA
+  scope: Critical Infrastructure
+  category: Hybrid
+  physics: M
+  license: 
+    - "Collaborations"
+    - "Educational"
+  cost: High
+  reference: 'Garcia, L., et al. (2025). SPHERE CPS Enclave: A Reconfigurable Testbed for Industrial Control System Security Experimentation. In Proceedings of the ACM/IEEE 16th International Conference
+    on Cyber-Physical Systems (with CPS-IoT Week 2025) (pp. 1-2).'
+  resource: 'https://sphere-project.net/'
+  protocol:
+    - "Not specified"
+
+- name: Boakye et al.
+  year: 2023
+  institution: 'CIC & UNB'
+  nation: Canada
+  scope: Smart Grid
+  category: Virtual
+  physics: S
+  license: 
+    - "Collaborations"
+    - "Educational"
+  cost: Low
+  reference: 'Boakye-Boateng, K., Ghorbani, A. A. & Lashkari, A. H. (2023). Implementation of a trust-based framework for substation defense in the smart grid. Smart Cities, 7(1), 99-140.'
+  resource: 'https://github.com/kwasibb/securing_substations_pst2023'
+  protocol:
+    - "Modbus/TCP"
+
+- name: VCPT
+  year: 2026
+  institution: Glasgow Caledonian University
+  nation: UK
+  scope: Transportation
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Akeel, M., et al. (2026). Virtual testbed for cyber-physical system security research and education: design, evaluation, and impact. Electronics, 15(3), 582.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+
+
+- name: Churilla et al.
+  year: 2024
+  institution: University of Arizona
+  nation: USA
+  scope: Chemical
+  category: Virtual
+  physics: S
+  license: "Open description"
+  cost: Low
+  reference: 'Churilla, C. (2024). Conducting Attack Scenarios and Forensic Techniques in a Virtual ICS Test Bed. In 2024 Annual Computer Security Applications Conference Workshops (ACSAC Workshops) (pp.
+    155-162). IEEE.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+
+- name: Hosseinzadeh et al.
+  year: 2024
+  institution: Glasgow Caledonian University
+  nation: Scotland
+  scope: Transportation
+  category: Hybrid
+  physics: R
+  license: 
+    - "Open source"
+    - "Educational"
+  cost: Low
+  reference: 'Hosseinzadeh, S., et al. (2024). Design and development considerations of a cyber physical testbed for operational technology research and education. Sensors, 24(12), 3923.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+
+- name: 'SIMPLE-ICS'
+  year: 2025
+  institution: Cardiff University
+  nation: UK
+  scope: Manufacturing
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Pramadi, Y. R., Spyridopoulos, T. & Kumar, V. (2026). Enabling End-to-End APT Emulation in Industrial Environments: Design and Implementation of the SIMPLE-ICS Testbed. arXiv preprint arXiv:2602.22082.'
+  resource: 'https://github.com/pramadiyr/simpleics'
+  protocol:
+    - "Modbus/TCP"
+    - "MQTT"
+
+- name: MOTRA
+  year: 2025
+  institution: University of OTH Regensburg (LaS³)
+  nation: Germany
+  scope: Water Treatment
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Kraust, S., Heller, P. & Mottok, J. (2025). A Modular and Flexible OPC UA Testbed Prototype for Cybersecurity Research. In The Nineteenth International Conference on Emerging Security Information,
+    Systems and Technologies (SECURWARE 2025).'
+  resource: 'https://github.com/Laboratory-for-Safe-and-Secure-Systems/motra-setups'
+  protocol:
+    - "OPC UA"
+
+- name: NEFICS
+  year: 2024
+  institution: Cyphysecurity
+  nation: USA
+  scope: PowerGrid
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Salazar, L., et al. (2024). A tale of two Industroyers: It was the season of darkness. In 2024 IEEE Symposium on Security and Privacy (SP) (pp. 312-330). IEEE.'
+  resource: 'https://github.com/Cyphysecurity/NEFICS'
+  protocol:
+    - "Modbus/TCP"
+    - "IEC 104"
+    - "IEC 61850"
+
+- name: ICSNet
+  year: 2024
+  institution: 'University of California & Texas A&M University'
+  nation: USA
+  scope: Water Treatment and Logistics
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Salazar, L., et al. (2024). ICSNet: A Hybrid-Interaction Honeynet for Industrial Control Systems. In Proceedings of the Sixth Workshop on CPS&IoT Security and Privacy (CPSIoTSec''24) (pp.
+    12).'
+  resource: 'https://anonymous.4open.science/r/ics-virtual-testbed-766D'
+  protocol:
+      - "Modbus/TCP"
+      - "IEC 104"
+      - "Ethernet/IP"
+
+- name: VISCORT
+  year: 2022
+  institution: engCORE Research Centre
+  nation: Ireland
+  scope: Chemical
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Ekisa, C., \''O Briain, D. & Kavanagh, Y. (2022). VICSORT - A Virtualised ICS Open-source Research Testbed. In Proceedings of the engCORE Research Centre.'
+  resource: 'https://gitlab.com/ekisac10/vicsort'
+  protocol:
+    - "Modbus/TCP"
+
+- name: HoneyICS
+  year: 2023
+  institution: 'University of Verona & University of Calabria & Eindhoven University of Technology'
+  nation: 'Italy, Netherlands'
+  scope: Secure Water Treatment
+  category: Virtual
+  physics: S
+  license: "Open description"
+  cost: Medium
+  reference: 'Lucchese, M., et al. (2023). HoneyICS: A High-interaction Physics-aware Honeynet for Industrial Control Systems. In Proceedings of the 18th International Conference on Availability, Reliability
+    and Security (ARES 2023) (pp. 10).'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+
+- name: ICSLure
+  year: 2025
+  institution: University of Calabria
+  nation: Italy
+  scope: Wind Farm
+  category: Hybrid
+  physics: S
+  license: "Open description"
+  cost: High
+  reference: 'Pironti, F. A., et al. (2025). ICSLure: A Very High Interaction Honeynet for PLC-based Industrial Control Systems. Manuscript submitted to ACM, 26.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+    - "S7Comm"
+
+- name: HoneyPLC++
+  year: 2023
+  institution: University of Moratuwa
+  nation: Sri Lanka
+  scope: Water Distribution
+  category: Virtual
+  physics: S
+  license: "Open description"
+  cost: Low
+  reference: 'Kirishikesan, K., et al. (2023). A High-interaction Physics-aware ICS Honeypot for Industrial Environments. International Journal on Advances in ICT for Emerging Regions, 16(2), 32-39.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"
+    - "S7Comm"
+
+- name: DVCP
+  year: 2015
+  institution: Hamburg University of Technology
+  nation: Germany
+  scope: Chemical Process
+  category: Virtual
+  physics: S
+  license: "Open-Source"
+  cost: Low
+  reference: 'Krotofil, M., et al. (2015, August). Rocking the pocket book: Hacking chemical plants. In DefCon Conference, DEFCON.'
+  resource: 'https://github.com/satejnik/DVCP-TE'
+  protocol:
+    - "Modbus/TCP"
+    - "Profinet"
+
+- name: "CR-ICS"
+  year: 2021
+  institution: MIT
+  nation: USA
+  scope: Gas Turbine
+  category: Virtual
+  physics: S
+  license: "Not available"
+  cost: Low
+  reference: 'Khan, Shaharyar, et al. "Cyber Range for Industrial Control Systems (CR-ICS) for Simulating Attack Scenarios." ITASEC. 2021.'
+  resource: '-'
+  protocol: 
+    - "Modbus/TCP"
+
+- name: "Choi et al."
+  year: 2021
+  institution: Texas A&M University Kingsville
+  nation: USA
+  scope: Power Electronics
+  category: Hybrid
+  physics: S
+  license: "Not available"
+  cost: Low
+  reference: 'Choi, Jinchun, et al. "A real-time hardware-in-the-loop (HIL) cybersecurity testbed for power electronics devices and systems in cyber-physical environments." 2021 IEEE 12th International Symposium on Power Electronics for Distributed Generation Systems (PEDG). IEEE, 2021.'
+  resource: '-'
+  protocol: 
+    - "Modbus/TCP"
+
+- name: "vWaterLabs"
+  year: 2021
+  institution: University of Idaho & Eastern Washington University
+  nation: USA
+  scope: Water Systems
+  category: Virtual
+  physics: S
+  license: "Open source"
+  cost: Low
+  reference: 'Kirkland, Matthew J., Stu Steiner, and Daniel Conte de Leon. "vWaterLabs: Design and characteristics of a virtual testbed for water-focused ICS cybersecurity education." Journal of Computing Sciences in Colleges 36.8 (2021): 33-42.'
+  resource: 'https://github.com/ICSSecurityLabs/ICSSecurityLabs'
+  protocol: 
+    - "Modbus/TCP"
+
+- name: "CENTER"
+  year: 2021
+  institution: Sakarya University
+  nation: Turkey
+  scope: Water Management
+  category: Physical
+  physics: S
+  license: "Open description"
+  cost: Low
+  reference: 'Özçelİk, İbrahim, et al. "Center water: A secure testbed infrastructure proposal for waste and potable water management." 2021 9th international symposium on digital forensics and security (ISDFS). IEEE, 2021.'
+  resource: '-'
+  protocol: 
+    - "DNP3"
+    - "S7Comm"
+    - "EtherCAT"
+    - "Modbus/TCP"
+    - "OPC"
+
+- name: Fujita et al.
+  year: 2021
+  institution: University of Electro-Communications & Metropolitan Police Department
+  nation: Japan
+  scope: Manufacturing
+  category: Hybrid
+  physics: S
+  license: "Not available"
+  cost: Low
+  reference: 'Fujita, Shintaro, et al. "OpenPLC based control system testbed for PLC whitelisting system." Artificial Life and Robotics 26.1 (2021): 149-154.'
+  resource: '-'
+  protocol:
+    - "Modbus/TCP"

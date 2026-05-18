@@ -1,0 +1,13 @@
+title: Testbeds and Datasets for ICS Research
+description: A curated list of testbeds and datasets for research in industrial control systems
+author: Denis Donadel
+
+domain: "awesomeics.github.io"
+baseurl: ""
+
+#twitter_username: 
+github_username: awesomeics
+github_repo: awesomeics.github.io
+#ga_id: 
+
+markdown: kramdown

@@ -1,0 +1,136 @@
+---
+layout: default
+title: Index
+---
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ "/static/css/td.css" | prepend:site.baseurl }}" media="screen,projection">
+    <link rel="shortcut icon" href="{{ "/static/img/favicon.png" | prepend:site.baseurl }}">
+  </head>
+  <body>
+    <div class="top-strip"></div>
+    <div class="container">
+      <div class="page-header text-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <h1 class="h2" style="margin-top:0;">
+              {{ site.title }}
+            </h1>
+            <p class="lead" style="margin-bottom:15px;">{{ site.description }}</p>
+            <div style="margin-bottom:10px;">
+              <img class="img-responsive" style="display:inline-block; vertical-align:middle; margin-right:8px;" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="awesome badge">
+              <img class="img-responsive" style="display:inline-block; vertical-align:middle; margin-right:8px;" src="https://img.shields.io/github/last-commit/awesomeics/awesomeics.github.io/main" alt="last-commit-main">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.description }}{% if site.twitter_hashtag %} #{{ site.twitter_hashtag }}{% endif %}" data-show-count="false" style="font-size:13px; vertical-align:middle;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px" style="vertical-align:middle;"></iframe>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="well well-sm text-left" style="margin-bottom:0;">
+              <p style="margin-bottom:10px;">Read more on the methodology, statistics, and citations <a target="_blank" href="{{ site.baseurl }}/info/">here</a>.</p>
+              <p style="margin-bottom:0;">To add/update a testbed/dataset, <a target="_blank" href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading"><strong>Filters</strong></div>
+                <div class="panel-body">
+              <p>Select what to display (otherwise all testbeds and datasets are displayed):</p>
+              <form class="form-inline">
+                <div class="form-group">
+                  {% for type in site.data.types %}
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="{{ type.tag }}-checkbox" class=""> {{ type.name }}
+                    </label>
+                  </div>
+                  {% endfor %}
+                </div>
+              </form>
+              
+              <p>Select which column to display:</p>
+              <form class="form-inline">
+                <div class="form-group">
+                  {% for col in site.data.columns %}
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" data-col="{{ col.tag }}" class="col-toggle" checked> {{ col.name }}
+                    </label>
+                  </div>
+                  {% endfor %}
+                </div>
+              </form>
+              
+              <p>Search for testbeds/datasets:</p>
+              <input type="text" class="form-control" id="input-search" onkeyup="filterFunction()" placeholder="Search for testbed/datasets...">
+                </div>
+              </div>
+          </div>
+        </div>
+       
+    </div>
+    
+
+    <div class="table-responsive">
+      <table id="full-table" class="table table-striped table-hover table-bordered table-condensed">
+        <thead>
+          <tr class="header">
+              {% for col in site.data.columns %}
+              <th class="info" data-col="{{ col.tag }}" data-type="{{ col.type }}"><span>{{ col.name }}</span></th>
+              {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for dataset in site.data.datasets %}
+          {% assign dataset_id = dataset.name | append: dataset.year | append: '-' | append: i | slugify %}
+          <tr data-type="Dataset" id="{{ dataset_id }}">
+              <td><a href="{{ dataset.url }}" target="_blank">{{ dataset.name }}</a></td>
+              <td>Dataset</td>
+              <td>{{ dataset.year }}</td>
+              <td>{{ dataset.data_type | join: ", " }}</td>
+              <td>{{ dataset.scope | join: ", " }}</td>
+              <td>{{ dataset.license | join: ", " }}</td>
+              <td>{{ dataset.institution | join: ", " }}</td>
+          </tr>
+          {% endfor %}
+
+          {% for testbed in site.data.testbeds %}
+          {% assign testbed_id = testbed.name | append: testbed.year | append: '-' | append: i | slugify %}
+          <tr data-type="Testbed" id="{{ testbed_id }}">
+              <td><a href="https://scholar.google.com/scholar?&q={{ testbed.reference }}" target="_blank">{{ testbed.name }}</a></td>
+              <td>Testbed</td>
+              <td>{{ testbed.year }}</td>
+              <td>{{ testbed.category }}</td>
+              <td>{{ testbed.scope | join: ", " }}</td>
+              <td>{{ testbed.license | join: ", " }}</td>
+              <td>{{ testbed.institution | join: " & " }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>      
+      
+    <footer class="mb-2">
+      <div style="margin-bottom:10px;">
+        Created and maintained by <a href="https://donadelden.github.io/">Denis Donadel</a>, inspired by <a href="https://sec-deadlines.github.io/">Sec-Deadlines</a> Last update: {{ site.time | date: "%-d %B %Y" }}.
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="{{ site.baseurl}}/static/js/main.js" async></script>
+    {% if site.ga_id %}
+    {% include analytics.html %}
+    {% endif %}
+  </body>
+</html>
