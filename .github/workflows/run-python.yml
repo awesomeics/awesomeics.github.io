@@ -1,0 +1,39 @@
+name: Run Python Statistics
+
+on:
+  push:
+    branches:
+      - main
+      - feat-statistics
+
+permissions:
+  contents: write
+
+jobs:
+  run-statistics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r stats/requirements.txt
+
+      - name: Run statistics script
+        run: python stats/statistics.py
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v10
+        with:
+          message: "[action] Regenerating statistics figures"
+          add: stats/figures
+          default_author: github_actor
