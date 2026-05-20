@@ -1,12 +1,16 @@
+import os
+from typing import List, Optional
+
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from yaml import safe_load
-import numpy as np
 
 # Set output format: PDF for papers, PNG for website
-OUTPUT_FORMAT = 'png'  
-# Decide whether to show the plots or not. Set to False for website. 
-VERBOSE = False
+OUTPUT_FORMAT = "png"
+# Decide whether to show the plots or not. Set to False for website.
+VERBOSE = True
+FIG_DIR = "stats/figures"
 
 
 def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", keep_only = []):
@@ -23,15 +27,14 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
     """
 
     if not filename:
-        filename = f'stats/figures/papers_per_{cat}_over_years.{OUTPUT_FORMAT}'
+        filename = os.path.join(FIG_DIR, f"papers_per_{cat}_over_years.{OUTPUT_FORMAT}")
 
-    # Load the YAML file
-    with open(yml_file_path, 'r') as file:
-        data = safe_load(file)
-    
+    # Load the YAML file into a dataframe
+    with open(yml_file_path, "r") as fh:
+        data = safe_load(fh)
     df = pd.DataFrame(data)
-    
-    # consider that elements in "cat" may be lists, so we need to explode them
+
+    # consider that elements in `cat` may be lists, so explode them
     if df[cat].apply(lambda x: isinstance(x, list)).any():
         df = df.explode(cat)
     
@@ -57,153 +60,115 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
         }
         df[cat] = df[cat].replace(rename_dict)
 
-    # if keep_only is not empty, filter the paper_counts to keep only the categories in keep_only
+    # if keep_only is not empty, filter to keep only the requested categories
     if keep_only:
         df = df[df[cat].isin(keep_only)]
 
     # Group by year and type, then count the number of papers
-    paper_counts = df.groupby(['year', cat]).size().reset_index(name='count')
+    paper_counts = df.groupby(["year", cat]).size().reset_index(name="count")
 
 
     # drop 2026
     #paper_counts = paper_counts[paper_counts['year'] < 2026]
 
     if cumulative:
-        # for every year, sum the counts of all previous years for each category
-        paper_counts['count'] = paper_counts.groupby(cat)['count'].cumsum()
-        # for years with no papers, we need to fill the count with the previous year's count
-        # do this manually by iterating over the years and categories
-        years = sorted(paper_counts['year'].unique())
+        # ensure all year/category combinations exist and then cumulative-sum per category
+        years = np.arange(paper_counts["year"].min(), paper_counts["year"].max() + 1)
         categories = sorted(paper_counts[cat].unique())
-        for category in categories:
-            last_count = 0
-            for year in years:
-                if not ((paper_counts['year'] == year) & (paper_counts[cat] == category)).any():
-                    paper_counts = pd.concat(
-                        [
-                            paper_counts,
-                            pd.DataFrame([{'year': year, cat: category, 'count': last_count}])
-                        ],
-                        ignore_index=True,
-                    )
-                else:
-                    last_count = paper_counts[(paper_counts['year'] == year) & (paper_counts[cat] == category)]['count'].values[0]
+        idx = pd.MultiIndex.from_product([years, categories], names=["year", cat])
+        paper_counts = (
+            paper_counts.set_index(["year", cat])
+            .reindex(idx, fill_value=0)
+            .reset_index()
+        )
+        paper_counts = paper_counts.sort_values([cat, "year"]) 
+        paper_counts["count"] = paper_counts.groupby(cat)["count"].cumsum()
         
 
-    # Create a line plot using seaborn
     plt.figure(figsize=(12, 6))
+    plt.rcParams.update({"font.size": 15})
 
-    plt.rcParams.update({'font.size': 15})
-    
     # Pivot data to have years as x and categories as separate columns
-    pivot = paper_counts.pivot(index='year', columns=cat, values='count').fillna(0)
+    pivot = paper_counts.pivot(index="year", columns=cat, values="count").fillna(0)
     for column in pivot.columns:
-        line, = plt.plot(pivot.index, pivot[column], marker='o', label=str(column))
-        # # Add linear fit for each column
-        # z = np.polyfit(pivot.index, pivot[column], 1)
-        # p = np.poly1d(z)
-        # #plt.plot(pivot.index, p(pivot.index), linestyle='--', alpha=0.7, color=line.get_color())
-    plt.legend(title='Testbed Type')
+        plt.plot(pivot.index, pivot[column], marker="o", label=str(column))
 
     # add vertical dotted line for 2021; only for paper version
-    if OUTPUT_FORMAT == 'pdf':
-        plt.axvline(x=2021, color='gray', linestyle='--', alpha=0.5)
-    
-    # Set plot labels and title
-    #plt.title('Number of Papers per Type Over the Years')
-    plt.xlabel('Year')
-    plt.ylabel('Number of Papers')
-    plt.legend(title='Testbed Type')
+    if OUTPUT_FORMAT == "pdf":
+        plt.axvline(x=2021, color="gray", linestyle="--", alpha=0.5)
 
-    # set one tick every to years
-    plt.xticks(np.arange(paper_counts['year'].min(), paper_counts['year'].max() + 1, 2))
+    plt.xlabel("Year")
+    plt.ylabel("Number of Papers")
+    plt.legend(title="Testbed Type")
+    plt.xticks(np.arange(paper_counts["year"].min(), paper_counts["year"].max() + 1, 2))
 
-    # Show the plot
     plt.tight_layout()
     plt.grid(alpha=0.2)
-    plt.savefig(filename, bbox_inches='tight', dpi=300)
-    if VERBOSE: plt.show()
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    plt.savefig(filename, bbox_inches="tight", dpi=300)
+    if VERBOSE:
+        plt.show()
 
 
 
-def number_of_data_type_over_time(yml_file_path, cat, cumulative=False, filename="", keep_only = []):
-
+def number_of_data_type_over_time(
+    yml_file_path: str,
+    cat: str,
+    cumulative: bool = False,
+    filename: str = "",
+    keep_only: Optional[List[str]] = None,
+):
     if not filename:
-        filename = f'stats/figures/{cat}_over_time.{OUTPUT_FORMAT}'
+        filename = os.path.join(FIG_DIR, f"{cat}_over_time.{OUTPUT_FORMAT}")
 
-    # Load the YAML file
-    with open(yml_file_path, 'r') as file:
-        data = safe_load(file)
-    
+    keep_only = keep_only or []
+
+    with open(yml_file_path, "r") as fh:
+        data = safe_load(fh)
     df = pd.DataFrame(data)
-    
-    # create a new column "source_count" with the size of the list in the "cat" column, if it's a list, otherwise 1
-    df['source_count'] = df[cat].apply(lambda x: len(x) if isinstance(x, list) else 1)
-    
 
-    # if keep_only is not empty, filter the paper_counts to keep only the categories in keep_only
+    # create a new column "source_count" counting list lengths
+    df["source_count"] = df[cat].apply(lambda x: len(x) if isinstance(x, list) else 1)
+
     if keep_only:
+        # if the column may be lists, explode first
+        if df[cat].apply(lambda x: isinstance(x, list)).any():
+            df = df.explode(cat)
         df = df[df[cat].isin(keep_only)]
 
-    # Group by year and type, then source_count the number of papers
-    paper_counts = df.groupby(['year', 'source_count']).size().reset_index(name='count')
-
-    # drop 2026
-    #paper_counts = paper_counts[paper_counts['year'] < 2026]
+    paper_counts = df.groupby(["year", "source_count"]).size().reset_index(name="count")
 
     if cumulative:
-        # for every year, sum the counts of all previous years for each category
-        paper_counts['count'] = paper_counts.groupby('source_count')['count'].cumsum()
-        # for years with no papers, we need to fill the count with the previous year's count
-        # do this manually by iterating over the years and categories
-        years = sorted(paper_counts['year'].unique())
-        categories = sorted(paper_counts['source_count'].unique())
-        for category in categories:
-            last_count = 0
-            for year in years:
-                if not ((paper_counts['year'] == year) & (paper_counts['source_count'] == category)).any():
-                    paper_counts = pd.concat(
-                        [
-                            paper_counts,
-                            pd.DataFrame([{'year': year, 'source_count': category, 'count': last_count}])
-                        ],
-                        ignore_index=True,
-                    )
-                else:
-                    last_count = paper_counts[(paper_counts['year'] == year) & (paper_counts['source_count'] == category)]['count'].values[0]
-        
+        years = np.arange(paper_counts["year"].min(), paper_counts["year"].max() + 1)
+        categories = sorted(paper_counts["source_count"].unique())
+        idx = pd.MultiIndex.from_product([years, categories], names=["year", "source_count"])
+        paper_counts = (
+            paper_counts.set_index(["year", "source_count"]) .reindex(idx, fill_value=0).reset_index()
+        )
+        paper_counts = paper_counts.sort_values(["source_count", "year"]) 
+        paper_counts["count"] = paper_counts.groupby("source_count")["count"].cumsum()
 
-    # Create a stacked bar plot
+    # Create a stacked percentage bar plot
     plt.figure(figsize=(12, 6))
+    plt.rcParams.update({"font.size": 15})
 
-    plt.rcParams.update({'font.size': 15})
-    
-    # Pivot data to have years as x and categories as separate columns
-    pivot = paper_counts.pivot(index='year', columns='source_count', values='count').fillna(0)
-    # Convert to percentages (each year sums to 100%)
+    pivot = paper_counts.pivot(index="year", columns="source_count", values="count").fillna(0)
     pivot_pct = pivot.div(pivot.sum(axis=1), axis=0) * 100
 
     num_colors_needed = len(pivot_pct.columns)
-    # Generate a color palette with the required number of colors that spans from a light blue to a dark blue
     colors_to_use = plt.cm.Blues(np.linspace(0.3, 0.9, num_colors_needed))
 
-    pivot_pct.plot(kind='bar', stacked=True, ax=plt.gca(), color=colors_to_use)
-    
-    # Set plot labels and title
-    #plt.title('Number of Papers per Type Over the Years')
-    plt.xlabel('Year')
-    plt.ylabel('Percentage (%)')
-    if cat == "data_type": cat = "Data Type"
-    if cat == "attacks": cat = "Attack Type"
-    plt.legend(title=f'{cat} Count')
+    pivot_pct.plot(kind="bar", stacked=True, ax=plt.gca(), color=colors_to_use)
 
-    # set one tick every to years
-    #plt.xticks(np.arange(paper_counts['year'].min(), paper_counts['year'].max() + 1, 2))
+    plt.xlabel("Year")
+    plt.ylabel("Percentage (%)")
+    pretty_cat = "Data Type" if cat == "data_type" else ("Attack Type" if cat == "attacks" else cat)
+    plt.legend(title=f"{pretty_cat} Count")
 
-    # Show the plot
     plt.tight_layout()
     plt.grid(alpha=0.2)
-    plt.savefig(filename, bbox_inches='tight', dpi=300)
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    plt.savefig(filename, bbox_inches="tight", dpi=300)
     if VERBOSE:
         plt.show()
 
@@ -284,13 +249,17 @@ def dataset_vs_testbed_over_time(yml_file_path_dataset, yml_file_path_testbed, c
     ax1.set_xticks(np.arange(merged['year'].min(), merged['year'].max() + 1, 2))
     
     plt.tight_layout()
-    plt.savefig(f'stats/figures/datasets_vs_testbeds_over_time.{OUTPUT_FORMAT}', bbox_inches='tight', dpi=300)
+    out = os.path.join(FIG_DIR, f"datasets_vs_testbeds_over_time.{OUTPUT_FORMAT}")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    plt.savefig(out, bbox_inches="tight", dpi=300)
     if VERBOSE:
         plt.show()
 
-# Example usage:
-dataset_vs_testbed_over_time('_data/datasets.yml', '_data/testbeds.yml', cumulative=True, two_axis=False)
-paper_per_type_vs_year('_data/testbeds.yml', "category", cumulative=True)
-paper_per_type_vs_year('_data/testbeds.yml', "protocol", cumulative=True)
-number_of_data_type_over_time('_data/datasets.yml', "data_type", cumulative=False)
-number_of_data_type_over_time('_data/datasets.yml', "attacks", cumulative=False)
+
+if __name__ == "__main__":
+    dataset_vs_testbed_over_time("_data/datasets.yml", "_data/testbeds.yml", cumulative=True, two_axis=False)
+    paper_per_type_vs_year("_data/testbeds.yml", "category", cumulative=True)
+    paper_per_type_vs_year("_data/testbeds.yml", "protocol", cumulative=True)
+    number_of_data_type_over_time("_data/datasets.yml", "data_type", cumulative=False)
+    number_of_data_type_over_time("_data/datasets.yml", "attacks", cumulative=False)
+
