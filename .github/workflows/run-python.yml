@@ -3,7 +3,7 @@ name: Run Python Statistics
 on:
   push:
     branches:
-      #- main
+      - main
       - feat-statistics
 
 permissions:
