@@ -1,0 +1,39 @@
+name: Run Python Statistics
+
+on:
+  push:
+    branches:
+      #- main
+      - feat-statistics
+
+jobs:
+  run-statistics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run statistics script
+        run: python stats/statistics.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Update statistics and images"
+            git push
+          else
+            echo "No changes to commit"
+          fi
