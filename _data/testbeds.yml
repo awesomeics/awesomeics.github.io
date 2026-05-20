@@ -573,7 +573,7 @@
   nation: India
   scope: Chemical
   category: Hybrid
-  physics: R
+  physics: Variable
   license: "Open description"
   cost: Low
   reference: 'Gholap, Y., Yeola, P. & Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
@@ -588,7 +588,7 @@
   institution: IIUM
   nation: Malaysia
   scope: Wastewater Systems
-  category: Physical
+  category: Hybrid
   physics: M
   license: 
     - "Collaborations"
@@ -926,7 +926,7 @@
 - name: Hosseinzadeh et al.
   year: 2024
   institution: Glasgow Caledonian University
-  nation: Scotland
+  nation: UK
   scope: Transportation
   category: Hybrid
   physics: R
@@ -940,7 +940,7 @@
     - "Modbus/TCP"
 
 - name: 'SIMPLE-ICS'
-  year: 2025
+  year: 2026
   institution: Cardiff University
   nation: UK
   scope: Manufacturing
@@ -953,6 +953,7 @@
   protocol:
     - "Modbus/TCP"
     - "MQTT"
+  note: "Resource link not working."
 
 - name: MOTRA
   year: 2025
@@ -1002,7 +1003,7 @@
       - "IEC 104"
       - "Ethernet/IP"
 
-- name: VISCORT
+- name: VICSORT
   year: 2022
   institution: engCORE Research Centre
   nation: Ireland

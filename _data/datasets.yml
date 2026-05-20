@@ -256,23 +256,7 @@
   accuracy: '-'
   institution: 'TU Wien'
   license-specific: CC BY-SA 4.0
-
-- name: Brenner et al.
-  year: 2024
-  scope: Smart Factory
-  data_type: Network
-  license: Open source
-  url: 'https://doi.org/10.48436/b0k3b-77a55'
-  reference: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
-  attacks: 
-    - Replay
-    - MitM
-  format: csv
-  best_ids: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
-  f1_score: 0.79
-  accuracy: '-'
-  institution: 'ETRI'
-  license-specific: CC BY 4.0
+  time: 16d
 
 - name: 'HVAC_Traces'
   scope: HVAC
@@ -419,6 +403,7 @@
   year: 2017
   institution: 'Singapore University (SUTD)'
   license-specific: N/A
+
 - name: "CyberCity Dataset"
   scope: City
   data_type: Network
@@ -503,11 +488,11 @@
   entries: 10M
   attacks: 
     - MitM
-  attack_pct: '0,11%'
+  attack_pct: '0.11%'
   format: 
     - pcap
     - parquet
-  url: 'https://github.com/nbke/s7-attacks'
+  url: https://doi.org/10.5281/zenodo.15373938
   reference: 'Kellerer, N., et al. (2025). Attacks on the Siemens S7 Protocol Using an Industrial Control System Testbed. In Proceedings of the 16th ACM International Conference on Future and Sustainable
     Energy Systems (pp. 770-779).'
   best_ids: ''
@@ -515,7 +500,7 @@
   accuracy: '0.995'
   precision: '0.994'
   license: Open source
-  license-specific: MIT
+  license-specific: CC-BY 4.0
   institution: 'Karlsruhe Institute of Technology'
 
 - name: Mubarak et al.
@@ -523,7 +508,6 @@
   scope: Wastewater system
   data_type: 
     - Network
-    - Physical
   time: 15m
   entries: 156K
   attacks: 
@@ -531,8 +515,8 @@
     - 'MitM'
     - 'DoS'
     - 'Others'
-  attack_pct: '55,90%'
-  format: pcap
+  attack_pct: '55.90%'
+  format: csv
   url: 'https://data.mendeley.com/datasets/k76xhm22yj/1'
   reference: 'Mubarak, S., et al. (2022). Industrial datasets with ICS testbed and attack detection using machine learning techniques. Intell. Autom. Soft Comput, 31(3), 1345-1360.'
   best_ids: ''
@@ -576,7 +560,7 @@
   scope: Energy and Water
   data_type: Network
   time: Var.
-  entries: '245,96 GB'
+  entries: '245.96 GB'
   attacks: 
     - 'Reconnaissance'
     - 'MitM'
@@ -701,7 +685,7 @@
 
 - name: 'Al-Duwairi et al.'
   year: 2025
-  scope: Waste Incineration
+  scope: Medical Waste Incineration
   data_type: Network
   time: 14d
   entries: 19M
@@ -711,7 +695,7 @@
     - 'DoS'
     - 'Injection'
     - 'Others'
-  attack_pct: '0,84%'
+  attack_pct: '0.84%'
   format: pcap
   url: 'https://data.mendeley.com/datasets/vpcr4wpgfd/4'
   reference: 'Al-Duwairi, B., et al. (2025). Dataset of SCADA traffic captures from a medical waste incinerator with injected cyberattacks. Data in Brief.'
@@ -735,7 +719,7 @@
     - 'Replay'
     - 'Injection'
     - 'Others'
-  attack_pct: '19,20%'
+  attack_pct: '19.20%'
   format: 
     - pcap
     - csv
@@ -788,6 +772,7 @@
     - Network
     - Physical
     - Logs
+    - "Forensic artifacts"
   time: 2d
   entries: 35GB
   attacks: 
@@ -817,14 +802,14 @@
     - Network
     - Physical
   time: 2h
-  entries: '24,3M'
+  entries: '24.3M'
   attacks: 
     - 'Reconnaissance'
     - 'MitM'
     - 'DoS'
     - 'Injection'
     - 'Others'
-  attack_pct: '15,85%'
+  attack_pct: '15.85%'
   format: 
     - pcap
     - csv
@@ -838,3 +823,20 @@
   license: IEEE Dataport
   license-specific: IEEE Dataport Terms of Use
   institution: 'Campus Biomedico University of Rome'
+
+- name: Brenner et al.
+  year: 2024
+  scope: Smart Factory
+  data_type: Network
+  license: Open source
+  url: 'https://doi.org/10.48436/b0k3b-77a55'
+  reference: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
+  attacks: 
+    - Replay
+    - MitM
+  format: csv
+  best_ids: 'Brenner, J., et al. (2024). Malware Detection in Industrial Control Systems. IEEE Transactions on Information Forensics and Security.'
+  f1_score: 0.79
+  accuracy: '-'
+  institution: 'ETRI'
+  license-specific: CC BY 4.0
