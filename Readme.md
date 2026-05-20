@@ -6,13 +6,14 @@ A curated list of testbeds and datasets for research in industrial control syste
 
 
 ## Contributing
-To contribute, send a pull request adding your testbed or dataset in `_data/testbeds.yml` or `_data/datasets.yml`.
+To contribute, send a pull request adding your testbed or dataset in `_data/testbeds.yml` or `_data/datasets.yml`. 
+Statistics in the `info.html` page will be regenerated automatically. 
 
 ## TODOs
 
-- [ ] Improve number of fields in the visualization.
+- [ ] Improve the number of fields in the visualization.
 - [ ] Adding map.
-- [ ] Adding page with stats.
+- [x] Adding page with stats.
 - [x] Merging of entries from [previous work](https://spritz.math.unipd.it/projects/ics_survey/).
 - [x] Website is up. 
 
