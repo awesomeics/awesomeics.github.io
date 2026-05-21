@@ -9,7 +9,7 @@ from yaml import safe_load
 # Set output format: PDF for papers, PNG for website
 OUTPUT_FORMAT = "png"
 # Decide whether to show the plots or not. Set to False for website.
-VERBOSE = True
+VERBOSE = False
 FIG_DIR = "stats/figures"
 
 
