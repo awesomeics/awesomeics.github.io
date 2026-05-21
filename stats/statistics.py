@@ -98,7 +98,7 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
         plt.axvline(x=2021, color="gray", linestyle="--", alpha=0.5)
 
     plt.xlabel("Year")
-    plt.ylabel("Number of Papers")
+    plt.ylabel("Number of Testbeds")
     plt.legend(title="Testbed Type")
     plt.xticks(np.arange(paper_counts["year"].min(), paper_counts["year"].max() + 1, 2))
 
@@ -231,7 +231,7 @@ def dataset_vs_testbed_over_time(yml_file_path_dataset, yml_file_path_testbed, c
         ax1.legend(lines, labels, loc='upper left')
     else:
         ax1.set_xlabel('Year', fontsize=16)
-        ax1.set_ylabel('Number of Items', fontsize=16)
+        ax1.set_ylabel('Number of Testbeds/Datasets', fontsize=16)
         ax1.plot(merged['year'], merged['datasets'], marker='o', color='tab:blue', label='Datasets')
         ax1.plot(merged['year'], merged['testbeds'], marker='s', color='tab:orange', label='Testbeds')
         ax1.tick_params(axis='x', labelsize=15)
