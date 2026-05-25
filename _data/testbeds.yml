@@ -57,7 +57,7 @@
   scope: "Generic ICS"
   category: "Virtual"
   license: "Not available"
-  reference: "Genge, B., et al. (2012). A cyber-physical experimentation environment for the security analysis of networked industrial control systems. Computers \\& Electrical Engineering, 38(5), 1146-1161."
+  reference: "Genge, B., et al. (2012). A cyber-physical experimentation environment for the security analysis of networked industrial control systems. Computers %26 Electrical Engineering, 38(5), 1146-1161."
   year: 2012
   protocol:
     - "Modbus/TCP"
@@ -100,7 +100,7 @@
   scope: "Nuclear Reactor"
   category: "Hybrid"
   license: "Not available"
-  reference: "Hui, H., et al. (2019). ICS Interaction Testbed: A Platform for Cyber-Physical Security Research. In 6th International Symposium for ICS \\& SCADA Cyber Security Research 2019 6 (pp. 89-96)."
+  reference: "Hui, H., et al. (2019). ICS Interaction Testbed: A Platform for Cyber-Physical Security Research. In 6th International Symposium for ICS %26 SCADA Cyber Security Research 2019 6 (pp. 89-96)."
   year: 2019
   protocol:
     - "S7Comm"
@@ -196,7 +196,7 @@
   scope: "Vehicular"
   category: "Hybrid"
   license: "Open-Source"
-  reference: "Rubio-Hernan, J., Rodolfo-Mejias, J., \\& Garcia-Alfaro, J. (2016, September). Security of cyber-physical systems. In International Workshop on the Security of Industrial Control Systems and Cyber-Physical Systems (pp. 3-18). Springer, Cham."
+  reference: "Rubio-Hernan, J., Rodolfo-Mejias, J., Garcia-Alfaro, J. (2016, September). Security of cyber-physical systems. In International Workshop on the Security of Industrial Control Systems and Cyber-Physical Systems (pp. 3-18). Springer, Cham."
   year: 2016
   protocol:
     - "Modbus/TCP"
@@ -233,7 +233,7 @@
   scope: "General ICS"
   category: "Virtual"
   license: "Not available"
-  reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS \\& SCADA Cyber Security Research 2018 5 (pp. 92-101)."
+  reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS %26 SCADA Cyber Security Research 2018 5 (pp. 92-101)."
   year: 2018
   protocol:
     - "OPC UA"
@@ -254,7 +254,7 @@
   scope: "4 Different ICS"
   category: "Hybrid"
   license: "Open Description"
-  reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials \\& Continua, 60(2), 691-705."
+  reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials %26 Continua, 60(2), 691-705."
   year: 2019
   protocol:
     - "Modbus/TCP"
