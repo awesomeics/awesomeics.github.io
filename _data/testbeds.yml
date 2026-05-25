@@ -576,7 +576,7 @@
   physics: Variable
   license: "Open description"
   cost: Low
-  reference: 'Gholap, Y., Yeola, P.,  Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
+  reference: 'Gholap, Y., Yeola, P., Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
     IEEE.'
   resource: '-'
   protocol:
@@ -948,7 +948,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Pramadi, Y. R., Spyridopoulos, T.,  Kumar, V. (2026). Enabling End-to-End APT Emulation in Industrial Environments: Design and Implementation of the SIMPLE-ICS Testbed. arXiv preprint arXiv:2602.22082.'
+  reference: 'Pramadi, Y. R., Spyridopoulos, T., Kumar, V. (2026). Enabling End-to-End APT Emulation in Industrial Environments: Design and Implementation of the SIMPLE-ICS Testbed. arXiv preprint arXiv:2602.22082.'
   resource: 'https://github.com/pramadiyr/simpleics'
   protocol:
     - "Modbus/TCP"
@@ -964,7 +964,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Kraust, S., Heller, P.,  Mottok, J. (2025). A Modular and Flexible OPC UA Testbed Prototype for Cybersecurity Research. In The Nineteenth International Conference on Emerging Security Information,
+  reference: 'Kraust, S., Heller, P., Mottok, J. (2025). A Modular and Flexible OPC UA Testbed Prototype for Cybersecurity Research. In The Nineteenth International Conference on Emerging Security Information,
     Systems and Technologies (SECURWARE 2025).'
   resource: 'https://github.com/Laboratory-for-Safe-and-Secure-Systems/motra-setups'
   protocol:
