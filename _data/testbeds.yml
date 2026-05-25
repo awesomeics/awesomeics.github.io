@@ -57,7 +57,7 @@
   scope: "Generic ICS"
   category: "Virtual"
   license: "Not available"
-  reference: "Genge, B., et al. (2012). A cyber-physical experimentation environment for the security analysis of networked industrial control systems. Computers & Electrical Engineering, 38(5), 1146-1161."
+  reference: "Genge, B., et al. (2012). A cyber-physical experimentation environment for the security analysis of networked industrial control systems. Computers \\& Electrical Engineering, 38(5), 1146-1161."
   year: 2012
   protocol:
     - "Modbus/TCP"
@@ -100,7 +100,7 @@
   scope: "Nuclear Reactor"
   category: "Hybrid"
   license: "Not available"
-  reference: "Hui, H., et al. (2019). ICS Interaction Testbed: A Platform for Cyber-Physical Security Research. In 6th International Symposium for ICS & SCADA Cyber Security Research 2019 6 (pp. 89-96)."
+  reference: "Hui, H., et al. (2019). ICS Interaction Testbed: A Platform for Cyber-Physical Security Research. In 6th International Symposium for ICS \\& SCADA Cyber Security Research 2019 6 (pp. 89-96)."
   year: 2019
   protocol:
     - "S7Comm"
@@ -196,7 +196,7 @@
   scope: "Vehicular"
   category: "Hybrid"
   license: "Open-Source"
-  reference: "Rubio-Hernan, J., Rodolfo-Mejias, J., & Garcia-Alfaro, J. (2016, September). Security of cyber-physical systems. In International Workshop on the Security of Industrial Control Systems and Cyber-Physical Systems (pp. 3-18). Springer, Cham."
+  reference: "Rubio-Hernan, J., Rodolfo-Mejias, J., \\& Garcia-Alfaro, J. (2016, September). Security of cyber-physical systems. In International Workshop on the Security of Industrial Control Systems and Cyber-Physical Systems (pp. 3-18). Springer, Cham."
   year: 2016
   protocol:
     - "Modbus/TCP"
@@ -233,7 +233,7 @@
   scope: "General ICS"
   category: "Virtual"
   license: "Not available"
-  reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS & SCADA Cyber Security Research 2018 5 (pp. 92-101)."
+  reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS \\& SCADA Cyber Security Research 2018 5 (pp. 92-101)."
   year: 2018
   protocol:
     - "OPC UA"
@@ -254,7 +254,7 @@
   scope: "4 Different ICS"
   category: "Hybrid"
   license: "Open Description"
-  reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials & Continua, 60(2), 691-705."
+  reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials \\& Continua, 60(2), 691-705."
   year: 2019
   protocol:
     - "Modbus/TCP"
@@ -276,7 +276,7 @@
   scope: "General CPS"
   category: "Virtual"
   license: "Open-source"
-  reference: "Antonioli, D., & Tippenhauer, N. O. (2015). MiniCPS: A toolkit for security research on CPS networks. In Proceedings of the First ACM workshop on cyber-physical systems-security and/or privacy (pp. 91-100)."
+  reference: "Antonioli, D., Tippenhauer, N. O. (2015). MiniCPS: A toolkit for security research on CPS networks. In Proceedings of the First ACM workshop on cyber-physical systems-security and/or privacy (pp. 91-100)."
   year: 2015
   protocol:
     - "Ethernet/IP"
@@ -352,7 +352,7 @@
   scope: "General ICS"
   category: "Virtual"
   license: "Open description"
-  reference: "Reaves, B., & Morris, T. (2012). An open virtual testbed for industrial control system security research. International Journal of Information Security, 11(4), 215-229."
+  reference: "Reaves, B., Morris, T. (2012). An open virtual testbed for industrial control system security research. International Journal of Information Security, 11(4), 215-229."
   year: 2012
   protocol:
     - "Modbus/TCP"
@@ -436,7 +436,7 @@
   scope: "Water Treatment"
   category: "Physical"
   license: "Collaborations"
-  reference: "Mathur, A. P., & Tippenhauer, N. O. (2016, April). SWaT: a water treatment testbed for research and training on ICS security. In 2016 International Workshop on Cyber-physical Systems for Smart Water Networks (CySWater) (pp. 31-36). IEEE."
+  reference: "Mathur, A. P., Tippenhauer, N. O. (2016, April). SWaT: a water treatment testbed for research and training on ICS security. In 2016 International Workshop on Cyber-physical Systems for Smart Water Networks (CySWater) (pp. 31-36). IEEE."
   year: 2016
   protocol: 
     - "Ethernet/IP"
@@ -559,7 +559,7 @@
   physics: R
   license: Not available
   cost: High
-  reference: 'Sicard, F., Hotellier, E. & Francq, J. (2022). An industrial control system physical testbed for naval defense cybersecurity research. In 2022 IEEE European Symposium on Security and Privacy
+  reference: 'Sicard, F., Hotellier, E., Francq, J. (2022). An industrial control system physical testbed for naval defense cybersecurity research. In 2022 IEEE European Symposium on Security and Privacy
     Workshops (EuroS&PW) (pp. 413-422). IEEE.'
   resource: '-'
   protocol:
@@ -576,7 +576,7 @@
   physics: Variable
   license: "Open description"
   cost: Low
-  reference: 'Gholap, Y., Yeola, P. & Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
+  reference: 'Gholap, Y., Yeola, P.,  Singh, V. (2025). On Developing a Hybrid Cyber-Physical Testbed for Cyber-Secure Industrial Control System. In 2025 IEEE Latin Conference on IoT (LCIoT) (pp. 137-140).
     IEEE.'
   resource: '-'
   protocol:
@@ -611,7 +611,7 @@
     - "Collaborations"
     - "Educational"
   cost: Medium
-  reference: 'Calder, M., Ahmed, M. & Nagaraja, S. (2023). SWaP: A Water Process Testbed for ICS Security Research. In 2023 IEEE International Conference on Omni-layer Intelligent Systems (COINS) (pp. 1-4).
+  reference: 'Calder, M., Ahmed, M., Nagaraja, S. (2023). SWaP: A Water Process Testbed for ICS Security Research. In 2023 IEEE International Conference on Omni-layer Intelligent Systems (COINS) (pp. 1-4).
     IEEE.'
   resource: '-'
   protocol:
@@ -641,7 +641,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'McGuan, C., Yu, C. & Lin, Q. (2023). Towards low-barrier cybersecurity research and education for industrial control systems. In 2023 IEEE International Conference on Intelligence and Security
+  reference: 'McGuan, C., Yu, C., Lin, Q. (2023). Towards low-barrier cybersecurity research and education for industrial control systems. In 2023 IEEE International Conference on Intelligence and Security
     Informatics (ISI) (pp. 1-6). IEEE.'
   resource: 
     - 'https://github.com/csmcguan/mintwin-svm-grfics11'
@@ -808,7 +808,7 @@
   physics: S
   license: "Open description"
   cost: High
-  reference: 'Nam, K., Kwon, K. & Kim, A. (2025). HINT-Sec: Hardware-in-the-loop nuclear power plant testbed for cyber security. Progress in Nuclear Energy, 180, 105600.'
+  reference: 'Nam, K., Kwon, K., Kim, A. (2025). HINT-Sec: Hardware-in-the-loop nuclear power plant testbed for cyber security. Progress in Nuclear Energy, 180, 105600.'
   resource: '-'
   protocol:
     - "Profibus"
@@ -888,7 +888,7 @@
     - "Collaborations"
     - "Educational"
   cost: Low
-  reference: 'Boakye-Boateng, K., Ghorbani, A. A. & Lashkari, A. H. (2023). Implementation of a trust-based framework for substation defense in the smart grid. Smart Cities, 7(1), 99-140.'
+  reference: 'Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. (2023). Implementation of a trust-based framework for substation defense in the smart grid. Smart Cities, 7(1), 99-140.'
   resource: 'https://github.com/kwasibb/securing_substations_pst2023'
   protocol:
     - "Modbus/TCP"
@@ -948,7 +948,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Pramadi, Y. R., Spyridopoulos, T. & Kumar, V. (2026). Enabling End-to-End APT Emulation in Industrial Environments: Design and Implementation of the SIMPLE-ICS Testbed. arXiv preprint arXiv:2602.22082.'
+  reference: 'Pramadi, Y. R., Spyridopoulos, T.,  Kumar, V. (2026). Enabling End-to-End APT Emulation in Industrial Environments: Design and Implementation of the SIMPLE-ICS Testbed. arXiv preprint arXiv:2602.22082.'
   resource: 'https://github.com/pramadiyr/simpleics'
   protocol:
     - "Modbus/TCP"
@@ -964,7 +964,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Kraust, S., Heller, P. & Mottok, J. (2025). A Modular and Flexible OPC UA Testbed Prototype for Cybersecurity Research. In The Nineteenth International Conference on Emerging Security Information,
+  reference: 'Kraust, S., Heller, P.,  Mottok, J. (2025). A Modular and Flexible OPC UA Testbed Prototype for Cybersecurity Research. In The Nineteenth International Conference on Emerging Security Information,
     Systems and Technologies (SECURWARE 2025).'
   resource: 'https://github.com/Laboratory-for-Safe-and-Secure-Systems/motra-setups'
   protocol:
@@ -1012,7 +1012,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Ekisa, C., \''O Briain, D. & Kavanagh, Y. (2022). VICSORT - A Virtualised ICS Open-source Research Testbed. In Proceedings of the engCORE Research Centre.'
+  reference: 'Ekisa, C., \''O Briain, D.,  Kavanagh, Y. (2022). VICSORT - A Virtualised ICS Open-source Research Testbed. In Proceedings of the engCORE Research Centre.'
   resource: 'https://gitlab.com/ekisac10/vicsort'
   protocol:
     - "Modbus/TCP"
