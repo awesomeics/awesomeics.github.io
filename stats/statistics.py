@@ -27,7 +27,7 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
     """
 
     if not filename:
-        filename = os.path.join(FIG_DIR, f"papers_per_{cat}_over_years.{OUTPUT_FORMAT}")
+        filename = os.path.join(FIG_DIR, f"{"testbeds" if "testbed" in yml_file_path else "datasets" if "dataset" in yml_file_path else "papers"}_per_{cat}_over_years.{OUTPUT_FORMAT}")
 
     # Load the YAML file into a dataframe
     with open(yml_file_path, "r") as fh:
@@ -260,6 +260,7 @@ if __name__ == "__main__":
     dataset_vs_testbed_over_time("_data/datasets.yml", "_data/testbeds.yml", cumulative=True, two_axis=False)
     paper_per_type_vs_year("_data/testbeds.yml", "category", cumulative=True)
     paper_per_type_vs_year("_data/testbeds.yml", "protocol", cumulative=True)
+    paper_per_type_vs_year("_data/datasets.yml", "field", cumulative=True)
     number_of_data_type_over_time("_data/datasets.yml", "data_type", cumulative=False)
     number_of_data_type_over_time("_data/datasets.yml", "attacks", cumulative=False)
 
