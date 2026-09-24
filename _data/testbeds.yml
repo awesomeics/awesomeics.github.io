@@ -2,6 +2,7 @@
 
 - name: "Davis et al."
   institution: "University of Illinois"
+  field: Energy
   scope: "Power Grid"
   category: "Virtual"
   license: "Open description"
@@ -13,6 +14,7 @@
 
 - name: "EPIC (iTrust)"
   institution: "Singapore University (SUTD)"
+  field: Energy
   scope: "Electric Power"
   category: "Physical"
   license: "Collaborations"
@@ -24,6 +26,7 @@
 
 - name: "EPIC (IPSC)"
   institution: "IPSC, Ispra"
+  field: Generic
   scope: "General CPS"
   category: "Hybrid"
   license: "Not available"
@@ -34,6 +37,7 @@
 
 - name: "EPS-ICS"
   institution: "CNIT SEC"
+  field: Generic
   scope: "General ICS"
   category: "Hybrid"
   license: "Not available"
@@ -44,6 +48,7 @@
 
 - name: "Farooqui et al."
   institution: "National University of Sciences and Technology"
+  field: Generic
   scope: "Generic CPS"
   category: "Virtual"
   license: "Open description"
@@ -54,6 +59,7 @@
 
 - name: "Genge et al."
   institution: "IPSC, Ispra"
+  field: Generic
   scope: "Generic ICS"
   category: "Virtual"
   license: "Not available"
@@ -66,6 +72,7 @@
 
 - name: "Gillen et al."
   institution: "Oak Ridge National Laboratory"
+  field: Industry
   scope: "Cooling System"
   category: "Hybrid"
   license: "Open Description"
@@ -76,6 +83,7 @@
 
 - name: "Giani et al."
   institution: "-"
+  field: Generic
   scope: "Generic ICS"
   category: "Virtual"
   license: "Open description"
@@ -87,6 +95,7 @@
 
 - name: "HAI Testbed"
   institution: "The Affiliated Institute of ETRI"
+  field: Industry
   scope: "Industrial"
   category: "Physical"
   license: "Open description"
@@ -97,6 +106,7 @@
 
 - name: "Hui Nuclear"
   institution: "CSIT, Queen's University"
+  field: Energy
   scope: "Nuclear Reactor"
   category: "Hybrid"
   license: "Not available"
@@ -109,6 +119,7 @@
 
 - name: "HYDRA"
   institution: "Università Roma Tre"
+  field: Water
   scope: "Water Distribution"
   category: "Physical"
   license: "Open description"
@@ -119,6 +130,7 @@
 
 - name: "Jarmakiewicz et al."
   institution: "Military University of Technology"
+  field: Energy
   scope: "Power Grid"
   category: "Hybrid"
   license: "Open Description"
@@ -130,6 +142,7 @@
 
 - name: "Jin et al."
   institution: "University of Illinois at Urbana-Champaign"
+  field: Generic
   scope: "Generic ICS"
   category: "Virtual"
   license: "Open Description"
@@ -141,6 +154,7 @@
 - name: "SCADA-SST"
   year: 2016
   institution: "King Fahd University of Petroleum & Minerals"
+  field: Generic
   scope: "2 different ICS"
   category: "Virtual"
   license: "Open-Source"
@@ -151,6 +165,7 @@
 - name: "Singhet et al."
   year: 2015
   institution: "Centre for Development of Advanced Computing"
+  field: Energy
   scope: "Power Grid"
   category: "Virtual"
   license: "Open Description"
@@ -161,6 +176,7 @@
 
 - name: Kaouk et al.
   institution: "University of Grenoble"
+  field: Generic
   scope: "Generic ICS"
   category: "Hybrid"
   license: "Open Description"
@@ -171,7 +187,8 @@
 
 - name: "KYPO4INDUSTRY"
   institution: "Masaryk University"
-  scope: "Generic ICS (pedagogy)"
+  field: Generic
+  scope: "Generic ICS"
   category: "Hybrid"
   license: "Open description"
   reference: "Čeleda, P., et al. (2020, February). KYPO4INDUSTRY: A Testbed for Teaching Cybersecurity of Industrial Control Systems. In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (pp. 1026-1032)."
@@ -182,6 +199,7 @@
 
 - name: Lee et al.
   institution: "Ajou University"
+  field: Energy
   scope: "Power Plant"
   category: "Virtual"
   license: "Open Description"
@@ -193,6 +211,7 @@
 
 - name: LegoSCADA
   institution: "Universite Paris-Saclay"
+  field: Smart City
   scope: "Vehicular"
   category: "Hybrid"
   license: "Open-Source"
@@ -204,6 +223,7 @@
 
 - name: "Lancaster's testbed"
   institution: "Lancaster University"
+  field: Generic
   scope: "Generic ICS"
   category: "Physical"
   license: "Collaborations"
@@ -219,6 +239,7 @@
 
 - name: "LICSTER"
   institution: "Hochschule Augsburg"
+  field: Generic
   scope: "Generic ICS"
   category: "Physical"
   license: "Open-Source"
@@ -230,6 +251,7 @@
 
 - name: "Maynard SCADA"
   institution: "CSIT, Queen's University"
+  field: Generic
   scope: "General ICS"
   category: "Virtual"
   license: "Not available"
@@ -241,6 +263,7 @@
 
 - name: Noorizadeh et al.
   institution: "Qatar University"
+  field: Chemical
   scope: "Chemical Process"
   category: "Hybrid"
   license: "Open Description"
@@ -251,6 +274,7 @@
 
 - name: "MSICST"
   institution: "University of Science and Technology of China"
+  field: Generic
   scope: "4 Different ICS"
   category: "Hybrid"
   license: "Open Description"
@@ -263,7 +287,8 @@
 
 - name: "Microgrid"
   institution: "The Ohio State University"
-  scope: "Electric Power"
+  field: Energy
+  scope: "Power Plant"
   category: "Hybrid"
   license: "Open description"
   reference: "Guo, F., et al. (2013). Design and development of a reconfigurable hybrid Microgrid testbed. In 2013 IEEE Energy Conversion Congress and Exposition (pp. 1350-1356). IEEE."
@@ -273,6 +298,7 @@
 
 - name: "MiniCPS"
   institution: "Singapore University (SUTD)"
+  field: Generic
   scope: "General CPS"
   category: "Virtual"
   license: "Open-source"
@@ -285,7 +311,12 @@
 
 - name: "Mississipi Ethernet"
   institution: "Mississippi State University"
-  scope: "Steel Rolling, Smart Grid"
+  field: 
+    - Industry
+    - Energy
+  scope: 
+    - "Steel Rolling"
+    - "Smart Grid"
   category: "Physical"
   license: "Not available"
   reference: "Morris, T., et al. (2011). A testbed for SCADA control system cybersecurity research and pedagogy. In Proceedings of the Seventh Annual Workshop on Cyber Security and Information Intelligence Research (pp. 1-1)."
@@ -295,6 +326,7 @@
 
 - name: "Mississipi Serial"
   institution: "Mississippi State University"
+  field: Industry
   scope: "Industrial operations"
   category: "Physical"
   license: "University"
@@ -307,6 +339,7 @@
 
 - name: "Gas Pipeline testbed"
   institution: "Mississippi State University"
+  field: Energy
   scope: "Gas Pipeline"
   category: "Virtual"
   license: "Not available"
@@ -317,6 +350,7 @@
 
 - name: "NIST"
   institution: "U.S. Department of Commerce"
+  field: Industry
   scope: "Industrial"
   category: "Hybrid"
   license: "Collaborations"
@@ -328,6 +362,7 @@
 
 - name: "PNNL"
   institution: "Pacific Northwest National Lab."
+  field: Generic
   scope: "Generic CPS"
   category: "Hybrid"
   license: "Open description"
@@ -338,6 +373,7 @@
 
 - name: "PowerCyber"
   institution: "Iowa State University"
+  field: Energy
   scope: "Power System"
   category: "Physical"
   license: "Open description"
@@ -349,6 +385,7 @@
 
 - name: "Reavers and Morris"
   institution: "Georgia Institute of Tech."
+  field: Generic
   scope: "General ICS"
   category: "Virtual"
   license: "Open description"
@@ -361,6 +398,7 @@
 - name: Queiroz et al.
   year: 2009
   institution: "RMIT University"
+  field: Water
   scope: "Water Distribution"
   category: "Hybrid"
   license: "Open Description"
@@ -371,6 +409,7 @@
 - name: Sayegh et al.
   year: 2013
   institution: "American University of Beirut"
+  field: Generic
   scope: "Generic ICS"
   category: "Physical"
   license: "Open Description"
@@ -380,6 +419,7 @@
 
 - name: "SCADASim"
   institution: "RMIT University, Melbourne"
+  field: Generic
   scope: "Generic ICS"
   category: "Virtual"
   license: "Not available"
@@ -391,6 +431,7 @@
 
 - name: "SCADAVT"
   institution: "RMIT University, Melbourne"
+  field: Water
   scope: "Water Network System"
   category: "Virtual"
   license: "Not available"
@@ -401,6 +442,7 @@
 
 - name: "SGTB Smart Grid Test Bed"
   institution: "Idaho National Laboratory"
+  field: Energy
   scope: "Power Grid"
   category: "Physical"
   license: "Not available"
@@ -412,6 +454,7 @@
 - name: "RICS-el"
   year: 2018
   institution: "Swedish Defence Research Agency"
+  field: Energy
   scope: "Power Grid"
   category: "Virtual"
   license: "Open Description"
@@ -421,6 +464,7 @@
 
 - name: "SNL Testbed"
   institution: "Sandia National Laboratories"
+  field: Generic
   scope: "Generic ICS"
   category: "Hybrid"
   license: "Open description"
@@ -433,6 +477,7 @@
 
 - name: "SWaT"
   institution: "Singapore University (SUTD)"
+  field: Water
   scope: "Water Treatment"
   category: "Physical"
   license: "Collaborations"
@@ -444,7 +489,10 @@
 
 - name: "TASSCS"
   institution: "University of Arizona"
-  scope: "Power System and generic"
+  field: Energy
+  scope: 
+    - Power System
+    - Generic
   category: "Virtual"
   license: "Open description"
   reference: "Mallouhi, M., et al. (2011). A testbed for analyzing security of SCADA control systems (TASSCS). In ISGT 2011 (pp. 1-7). IEEE."
@@ -454,6 +502,7 @@
 
 - name: "Turbo-Gas Power Plant (T-GPP)"
   institution: "IPSC, Ispra"
+  field: Energy
   scope: "Power Plant"
   category: "Physical"
   license: "Not available"
@@ -465,6 +514,7 @@
 
 - name: "VPST"
   institution: "University of Illinois"
+  field: Energy
   scope: "Power Grid"
   category: "Hybrid"
   license: "Open description"
@@ -475,6 +525,7 @@
 
 - name: "VTET"
   institution: "SKL-MEAC, Zhengzhou"
+  field: Chemical
   scope: "Chemical Process"
   category: "Virtual"
   license: "Not available"
@@ -487,6 +538,7 @@
 
 - name: "WADI"
   institution: "Singapore University (SUTD)"
+  field: Water
   scope: "Water Distribution"
   category: "Physical"
   license: "Collaborations"
@@ -497,6 +549,7 @@
 
 - name: "Wang et al."
   institution: "-"
+  field: Generic
   scope: "Generic ICS"
   category: "Virtual"
   license: "Open description"
@@ -509,6 +562,7 @@
 - name: "CyberCity Testbed"
   year: 2016
   institution: "SANS Institute"
+  field: "Smart City"
   scope: "City"
   category: "Hybrid"
   license: "Education"
@@ -523,7 +577,8 @@
   year: 2025
   institution: KIT
   nation: Germany
-  scope: Renewable Energy
+  field: Energy
+  scope: Renewable
   category: Hybrid
   physics: S
   license: "Open source"
@@ -539,7 +594,8 @@
   year: 2025
   institution: 'Vanderbilt University & Siemens Corporation'
   nation: USA
-  scope: Energy
+  field: Energy
+  scope: Power System
   category: Hybrid
   physics: S
   license: "Open description"
@@ -554,6 +610,7 @@
   year: 2022
   institution: NCL
   nation: France
+  field: Military
   scope: Naval Defense
   category: Physical
   physics: R
@@ -571,6 +628,7 @@
   year: 2025
   institution: IIT Bombay
   nation: India
+  field: Chemical
   scope: Chemical
   category: Hybrid
   physics: Variable
@@ -587,6 +645,7 @@
   year: 2022
   institution: IIUM
   nation: Malaysia
+  field: Water
   scope: Wastewater Systems
   category: Hybrid
   physics: M
@@ -603,6 +662,7 @@
 - name: SWaP
   year: 2023
   institution: 'University of Strathclyde & Newcastle University'
+  field: Water
   nation: UK
   scope: Water Management Systems
   category: Physical
@@ -622,6 +682,7 @@
   year: 2023
   institution: 'TAMU & SNL'
   nation: USA
+  field: Energy
   scope: Smart Grid
   category: Virtual
   physics: S
@@ -636,7 +697,12 @@
   year: 2023
   institution: Cleveland State University
   nation: USA
-  scope: Chemical and Manufacturing
+  field: 
+  - Chemical
+  - Industry
+  scope: 
+  - Chemical
+  - Manufacturing
   category: Virtual
   physics: S
   license: "Open source"
@@ -654,6 +720,7 @@
   year: 2018
   institution: Georgia Tech
   nation: USA
+  field: Chemical
   scope: Chemical Process
   category: Virtual
   physics: S
@@ -668,6 +735,7 @@
   year: 2016
   institution: University of New Orleans
   nation: USA
+  field: Generic
   scope: 3 Different ICS
   category: Physical
   license: "Open Description"
@@ -683,6 +751,7 @@
   year: 2016
   institution: University of Alabama in Huntsville
   nation: USA
+  field: Energy
   scope: Gas Pipeline
   category: Hybrid
   license: "Open Description"
@@ -695,6 +764,7 @@
   year: 2019
   institution: Brno University of Technology
   nation: Czech Republic
+  field: Energy
   scope: Power Grid
   category: Physical
   license: "Open Description"
@@ -707,6 +777,7 @@
   year: 2016
   institution: Binghamton University
   nation: USA
+  field: Energy
   scope: Power Plant
   physics: R
   category: Physical
@@ -720,6 +791,7 @@
   year: 2018
   institution: Federal Institute of Education, Science, and Technology, Sao Paulo
   nation: Brazil
+  field: Water
   scope: Water Distribution
   physics: R
   category: Physical
@@ -734,6 +806,7 @@
   institution: University of Coimbra
   nation: Portugal
   physics: S
+  field: Energy
   scope: Power Grid
   category: Hybrid
   license: "Open Description"
@@ -746,6 +819,7 @@
   year: 2014
   institution: Queen's University Belfast
   nation: UK
+  field: Energy
   scope: Power Grid
   physics: R
   category: Physical
@@ -759,6 +833,7 @@
   year: 2019
   institution: University of Tennessee
   nation: USA
+  field: Energy
   scope: Nuclear Plant
   category: Physical
   physics: R
@@ -772,6 +847,7 @@
   year: 2024
   institution: University of Naples Federico II
   nation: Italy
+  field: Energy
   scope: Energy
   category: Hybrid
   physics: Variabile
@@ -787,7 +863,14 @@
   year: 2025
   institution: Curtin University
   nation: Australia
-  scope: 'Energy, Water, Manufacturing'
+  field: 
+  - Energy
+  - Water
+  - Industry
+  scope: 
+  - Energy
+  - Water
+  - Manufacturing
   category: Virtual
   physics: S
   license: "Open source"
@@ -804,6 +887,7 @@
   institution: 'KIINNC & University of Suwon'
   nation: Republic of Korea
   scope: Nuclear Energy
+  field: Energy
   category: Hybrid
   physics: S
   license: "Open description"
@@ -816,6 +900,7 @@
 
 - name: Koganti et al.
   institution: University of Idaho
+  field: Energy
   scope: Power Grid
   category: Virtual
   license: "Open Description"
@@ -828,6 +913,7 @@
   institution: National Security Research Institute
   year: 2019
   scope: Cyber-Physical Battlefield Platform
+  field: Military
   category: Hybrid
   license: "Open description"
   physics: R
@@ -839,6 +925,7 @@
 - name: Koutsandria et al.
   institution: Sapienza University of Rome
   year: 2015
+  field: Energy
   scope: Power Grid
   category: Hybrid
   license: "Open Description"
@@ -851,6 +938,7 @@
 - name: Aghamolki et al.
   institution: University of South Florida
   year: 2015
+  field: Energy
   scope: Power Grid
   category: Hybrid
   license: "Open Description"
@@ -864,6 +952,7 @@
   year: 2025
   institution: 'USC-IS & Northeastern University & University of Utah'
   nation: USA
+  field: Generic
   scope: Critical Infrastructure
   category: Hybrid
   physics: M
@@ -881,6 +970,7 @@
   year: 2023
   institution: 'CIC & UNB'
   nation: Canada
+  field: Energy
   scope: Smart Grid
   category: Virtual
   physics: S
@@ -897,6 +987,7 @@
   year: 2026
   institution: Glasgow Caledonian University
   nation: UK
+  field: Smart City
   scope: Transportation
   category: Virtual
   physics: S
@@ -912,6 +1003,7 @@
   year: 2024
   institution: University of Arizona
   nation: USA
+  field: Chemical
   scope: Chemical
   category: Virtual
   physics: S
@@ -927,6 +1019,7 @@
   year: 2024
   institution: Glasgow Caledonian University
   nation: UK
+  field: Smart City
   scope: Transportation
   category: Hybrid
   physics: R
@@ -943,6 +1036,7 @@
   year: 2026
   institution: Cardiff University
   nation: UK
+  field: Industry
   scope: Manufacturing
   category: Virtual
   physics: S
@@ -959,6 +1053,7 @@
   year: 2025
   institution: University of OTH Regensburg (LaS³)
   nation: Germany
+  field: Water
   scope: Water Treatment
   category: Virtual
   physics: S
@@ -974,7 +1069,8 @@
   year: 2024
   institution: Cyphysecurity
   nation: USA
-  scope: PowerGrid
+  field: Energy
+  scope: Power Grid
   category: Virtual
   physics: S
   license: "Open source"
@@ -990,7 +1086,12 @@
   year: 2024
   institution: 'University of California & Texas A&M University'
   nation: USA
-  scope: Water Treatment and Logistics
+  field: 
+  - Industry
+  - Water
+  scope: 
+  - Water Treatment
+  - Logistics
   category: Virtual
   physics: S
   license: "Open source"
@@ -1007,6 +1108,7 @@
   year: 2022
   institution: engCORE Research Centre
   nation: Ireland
+  field: Chemical
   scope: Chemical
   category: Virtual
   physics: S
@@ -1021,6 +1123,7 @@
   year: 2023
   institution: 'University of Verona & University of Calabria & Eindhoven University of Technology'
   nation: 'Italy, Netherlands'
+  field: Water
   scope: Secure Water Treatment
   category: Virtual
   physics: S
@@ -1036,6 +1139,7 @@
   year: 2025
   institution: University of Calabria
   nation: Italy
+  field: Energy
   scope: Wind Farm
   category: Hybrid
   physics: S
@@ -1051,6 +1155,7 @@
   year: 2023
   institution: University of Moratuwa
   nation: Sri Lanka
+  field: Water
   scope: Water Distribution
   category: Virtual
   physics: S
@@ -1066,6 +1171,7 @@
   year: 2015
   institution: Hamburg University of Technology
   nation: Germany
+  field: Chemical
   scope: Chemical Process
   category: Virtual
   physics: S
@@ -1081,6 +1187,7 @@
   year: 2021
   institution: MIT
   nation: USA
+  field: Energy
   scope: Gas Turbine
   category: Virtual
   physics: S
@@ -1095,6 +1202,7 @@
   year: 2021
   institution: Texas A&M University Kingsville
   nation: USA
+  field: Energy
   scope: Power Electronics
   category: Hybrid
   physics: S
@@ -1109,6 +1217,7 @@
   year: 2021
   institution: University of Idaho & Eastern Washington University
   nation: USA
+  field: Water
   scope: Water Systems
   category: Virtual
   physics: S
@@ -1123,6 +1232,7 @@
   year: 2021
   institution: Sakarya University
   nation: Turkey
+  field: Water
   scope: Water Management
   category: Physical
   physics: S
@@ -1141,6 +1251,7 @@
   year: 2021
   institution: University of Electro-Communications & Metropolitan Police Department
   nation: Japan
+  field: Industry
   scope: Manufacturing
   category: Hybrid
   physics: S

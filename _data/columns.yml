@@ -20,3 +20,6 @@
 - name: Institution
   tag: institution
   type: text
+- name: Field
+  tag: field
+  type: text

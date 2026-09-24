@@ -94,9 +94,10 @@ title: Index
               <td>{{ dataset.year }}</td>
               <td>{{ dataset.data_type | join: ", " }}</td>
               <td>{{ dataset.scope | join: ", " }}</td>
-              <td>{{ dataset.field | join: ", " }}</td>
+              
               <td>{{ dataset.license | join: ", " }}</td>
               <td>{{ dataset.institution | join: ", " }}</td>
+              <td>{{ dataset.field | join: ", " }}</td>
           </tr>
           {% endfor %}
 
@@ -110,6 +111,7 @@ title: Index
               <td>{{ testbed.scope | join: ", " }}</td>
               <td>{{ testbed.license | join: ", " }}</td>
               <td>{{ testbed.institution | join: " & " }}</td>
+              <td>{{ testbed.field | join: ", " }}</td>
           </tr>
           {% endfor %}
         </tbody>
