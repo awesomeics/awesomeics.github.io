@@ -1,5 +1,5 @@
 import os
-from typing import List, Optional
+from typing import List, Optional, Union
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,7 +13,13 @@ VERBOSE = False
 FIG_DIR = "stats/figures"
 
 
-def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", keep_only = []):
+def paper_per_type_vs_year(
+    yml_file_path: Union[str, List[str]],
+    cat,
+    cumulative=False,
+    filename="",
+    keep_only=[],
+):
     """
     Plots the number of papers per type (journal, conference, etc.) over the years.
     
@@ -27,12 +33,31 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
     """
 
     if not filename:
-        filename = os.path.join(FIG_DIR, f"{"testbeds" if "testbed" in yml_file_path else "datasets" if "dataset" in yml_file_path else "papers"}_per_{cat}_over_years.{OUTPUT_FORMAT}")
+        if isinstance(yml_file_path, list):
+            data_type = "Papers"
+        else:
+            data_type = (
+                "Testbeds"
+                if "testbed" in yml_file_path
+                else "Datasets"
+                if "dataset" in yml_file_path
+                else "Papers"
+            )
+        filename = os.path.join(
+            FIG_DIR, f"{data_type.lower()}_per_{cat}_over_years.{OUTPUT_FORMAT}"
+        )
 
     # Load the YAML file into a dataframe
-    with open(yml_file_path, "r") as fh:
-        data = safe_load(fh)
-    df = pd.DataFrame(data)
+    file_paths = yml_file_path if isinstance(yml_file_path, list) else [yml_file_path]
+    data = []
+    important_columns = ["year", cat]
+    for file_path in file_paths:
+        with open(file_path, "r") as fh:
+            file_df = pd.DataFrame(safe_load(fh) or [])
+        # Select the columns needed for this plot before merging files with
+        # potentially different schemas.
+        data.append(file_df.reindex(columns=important_columns))
+    df = pd.concat(data, ignore_index=True)
 
     # consider that elements in `cat` may be lists, so explode them
     if df[cat].apply(lambda x: isinstance(x, list)).any():
@@ -98,8 +123,8 @@ def paper_per_type_vs_year(yml_file_path, cat, cumulative=False, filename="", ke
         plt.axvline(x=2021, color="gray", linestyle="--", alpha=0.5)
 
     plt.xlabel("Year")
-    plt.ylabel("Number of Testbeds")
-    plt.legend(title="Testbed Type")
+    plt.ylabel(f"Number of {data_type}")
+    plt.legend(title=f"{data_type[:-1]} {cat.capitalize()}")
     plt.xticks(np.arange(paper_counts["year"].min(), paper_counts["year"].max() + 1, 2))
 
     plt.tight_layout()
@@ -164,6 +189,21 @@ def number_of_data_type_over_time(
     plt.ylabel("Percentage (%)")
     pretty_cat = "Data Type" if cat == "data_type" else ("Attack Type" if cat == "attacks" else cat)
     plt.legend(title=f"{pretty_cat} Count")
+
+    # add another line of ticks in the x axis but above the graph indicating for each year, the total number of papers that compose each bar
+    total_counts = pivot.sum(axis=1)
+    for i, total in enumerate(total_counts):
+        plt.text(i, 102, f"{int(total)}", ha="center", va="bottom", fontsize=11, fontstyle="italic")
+    # add also a name to the text above the graph indicating that it is the total number of papers
+    plt.text(
+        (len(total_counts) - 1) / 2,
+        107,
+        "Total Papers per Year",
+        ha="center",
+        va="bottom",
+        fontsize=12,
+        fontstyle="italic",
+    )
 
     plt.tight_layout()
     plt.grid(alpha=0.2)
@@ -261,6 +301,7 @@ if __name__ == "__main__":
     paper_per_type_vs_year("_data/testbeds.yml", "category", cumulative=True)
     paper_per_type_vs_year("_data/testbeds.yml", "protocol", cumulative=True)
     paper_per_type_vs_year("_data/datasets.yml", "field", cumulative=True)
+    paper_per_type_vs_year(["_data/datasets.yml", "_data/testbeds.yml"], "field", cumulative=True)
     number_of_data_type_over_time("_data/datasets.yml", "data_type", cumulative=False)
     number_of_data_type_over_time("_data/datasets.yml", "attacks", cumulative=False)
 
