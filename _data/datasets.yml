@@ -1,5 +1,5 @@
 - name: '4SICS'
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type: Network
   license: Open source
@@ -15,7 +15,7 @@
   license-specific: N/A
 
 - name: 'BATADAL'
-  category: Water
+  field: Water
   scope: Water Distribution
   data_type: Physical
   license: Open source
@@ -36,7 +36,7 @@
   license-specific: CC BY 4.0
 
 - name: "CLIK on PLCs!"
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type:
     - Network
@@ -59,7 +59,7 @@
   license-specific: N/A
 
 - name: "Control-logic-attack-datasets"
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type: Network
   license: "Open source"
@@ -78,7 +78,7 @@
 
 
 - name: 'D1: Power System Datasets'
-  category: Energy
+  field: Energy
   scope: Power System
   data_type: 
     - Physical
@@ -100,7 +100,7 @@
   license-specific: N/A
 
 - name: 'D2: Gas Pipeline Datasets'
-  category: Energy 
+  field: Energy 
   scope: Gas Pipeline
   data_type: Network
   license: Open source
@@ -117,7 +117,7 @@
   institution: 'University of Alabama in Huntsville'
 
 - name: 'D3b: Water Storage Tank'
-  category: Water
+  field: Water
   scope: Water Storage Tank
   data_type: Network
   license: Open source
@@ -136,7 +136,7 @@
   license-specific: N/A
 
 - name: 'D4: New Gas Pipeline'
-  category: Energy
+  field: Energy
   scope: Gas Pipeline
   data_type: Network
   license: Open source
@@ -155,7 +155,7 @@
   license-specific: N/A
 
 - name: 'D5: Energy Manag. S. D.'
-  category: Energy
+  field: Energy
   scope: Energy Management
   data_type: Logs
   license: Open source
@@ -172,7 +172,7 @@
   license-specific: N/A
 
 - name: 'Electra Modbus'
-  category: Energy
+  field: Energy
   scope: Power System
   data_type: Network
   license: Open source
@@ -191,7 +191,7 @@
   license-specific: N/A
 
 - name: 'Electra S7Comm'
-  category: Energy
+  field: Energy
   scope: Power System
   data_type: Network
   license: Open source
@@ -210,7 +210,7 @@
   license-specific: N/A
 
 - name: 'EPIC Dataset'
-  category: Energy
+  field: Energy
   scope: Power System
   data_type: 
     - Physical
@@ -231,7 +231,7 @@
   license-specific: N/A
 
 - name: 'HAI-20.03'
-  category: Industry
+  field: Industry
   scope: Industrial
   data_type: Physical
   license: Open source
@@ -251,7 +251,7 @@
 
 - name: HAI-21.03
   year: 2021
-  category: Generic
+  field: Generic
   scope: Multi-Process ICS
   data_type: 
   - Physical
@@ -273,7 +273,7 @@
   time: 16d
 
 - name: 'HVAC_Traces'
-  category: Smart City
+  field: Smart City
   scope: HVAC
   data_type: Network
   license: Open source
@@ -289,7 +289,7 @@
   license-specific: N/A
 
 - name: 'Lemay Covert'
-  category: Energy
+  field: Energy
   scope: Breakers Controller
   data_type: Network
   license: Open source
@@ -308,7 +308,7 @@
   license-specific: N/A
 
 - name: 'Lemay SCADA'
-  category: Energy
+  field: Energy
   scope: Breakers Controller
   data_type: Network
   license: Open source
@@ -329,7 +329,7 @@
   license-specific: N/A
 
 - name: 'Modbus SCADA \#1'
-  category: Industry
+  field: Industry
   scope: Liquid Pump
   data_type: Network
   license: Open source
@@ -347,7 +347,7 @@
   license-specific: N/A
 
 - name: 'QUT_S7Comm'
-  category: Industry
+  field: Industry
   scope: Mining Refinery
   data_type: 
     - Network
@@ -369,7 +369,7 @@
   license-specific: N/A
 
 - name: 'S4x15 ICS'
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type: Network
   license: Open source
@@ -386,7 +386,7 @@
   license-specific: N/A
 
 - name: 'SWaT Dataset'
-  category: Water
+  field: Water
   scope: Water Treatment
   data_type: 
     - Physical
@@ -409,7 +409,7 @@
   license-specific: N/A
 
 - name: 'WADI Dataset'
-  category: Water
+  field: Water
   scope: Water Distribution
   data_type: Physical
   license: Free upon request
@@ -427,7 +427,7 @@
   license-specific: N/A
 
 - name: "CyberCity Dataset"
-  category: Smart City
+  field: Smart City
   scope: City
   data_type: Network
   license: "Open source"
@@ -444,7 +444,7 @@
   year: 2016
 
 - name: "WUSTL-IIOT-2018"
-  category: Water
+  field: Water
   scope: Water Control
   data_type: 
     - Physical
@@ -460,7 +460,7 @@
   license-specific: N/A
 
 - name: "QUT_DNP3"
-  category: Energy
+  field: Energy
   scope: Power Grid
   data_type: 
     - Physical
@@ -482,7 +482,7 @@
   license-specific: N/A
 
 - name: "QUT_S7_Myers" 
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type: 
     - Physical
@@ -505,7 +505,7 @@
 
 - name: Kellerer et al.
   year: 2025
-  category: Energy
+  field: Energy
   scope: Renewable
   data_type: 
     - Network
@@ -532,7 +532,7 @@
 
 - name: Mubarak et al.
   year: 2022
-  category: Water
+  field: Water
   scope: Wastewater
   data_type: 
     - Network
@@ -557,7 +557,7 @@
 
 - name: 'ICS-Flow'
   year: 2023
-  category: Industry
+  field: Industry
   scope: Bottling Plant
   data_type: 
     - Network
@@ -586,7 +586,7 @@
 
 - name: 'ICS-NAD'
   year: 2026
-  category:
+  field:
     - Energy
     - Water
   scope:
@@ -617,7 +617,7 @@
 
 - name: Deng et al.
   year: 2023
-  category: Energy
+  field: Energy
   scope: Gas Pipeline
   data_type: 
     - Network
@@ -642,7 +642,7 @@
 
 - name: 'ICS-ADD'
   year: 2024
-  category: Water
+  field: Water
   scope: Water Treatment
   data_type: 
     - Network
@@ -673,7 +673,7 @@
 
 - name: Huang et al.
   year: 2023
-  category: Energy
+  field: Energy
   scope: Smart Grid
   data_type: 
     - Network
@@ -699,7 +699,7 @@
 
 - name: Cyber4OT
   year: 2025
-  category: Generic
+  field: Generic
   scope: Generic ICS
   data_type: Network
   time: Var.
@@ -723,7 +723,7 @@
 
 - name: 'Al-Duwairi et al.'
   year: 2025
-  category: Industry
+  field: Industry
   scope: Medical Waste Incineration
   data_type: Network
   time: 14d
@@ -748,7 +748,7 @@
 
 - name: Xuelei Wang
   year: 2023
-  category: Energy
+  field: Energy
   scope: Electricity Substations
   data_type: 
     - Network
@@ -777,7 +777,7 @@
 
 - name: CIC Modbus
   year: 2023
-  category: Energy
+  field: Energy
   scope: Smart Grid
   data_type: 
     - Network
@@ -808,7 +808,7 @@
 
 - name: Signals and Symptoms
   year: 2024
-  category: Smart City
+  field: Smart City
   scope: Transportation
   data_type: 
     - Network
@@ -839,7 +839,7 @@
 
 - name: WDT
   year: 2021
-  category: Water
+  field: Water
   scope: Water Distribution
   data_type: 
     - Network
@@ -869,7 +869,7 @@
 
 - name: Brenner et al.
   year: 2024
-  category: Industry
+  field: Industry
   scope: Smart Factory
   data_type: Network
   license: Open source
