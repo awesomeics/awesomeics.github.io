@@ -26,8 +26,8 @@
 
 - name: "EPIC (IPSC)"
   institution: "IPSC, Ispra"
-  field: Generic
-  scope: "General CPS"
+  field: Industry
+  scope: "Generic ICS"
   category: "Hybrid"
   license: "Not available"
   reference: "Siaterlis, C., et al. (2013). EPIC: a testbed for scientifically rigorous cyber-physical security experimentation. IEEE Transactions on Emerging Topics in Computing, 1(2), 319-330."
@@ -37,8 +37,8 @@
 
 - name: "EPS-ICS"
   institution: "CNIT SEC"
-  field: Generic
-  scope: "General ICS"
+  field: Industry
+  scope: "Generic ICS"
   category: "Hybrid"
   license: "Not available"
   reference: "Gao, H., et al. (2013). The design of ics testbed based on emulation, physical, and simulation (eps-ics testbed). In 2013 Ninth International Conference on Intelligent Information Hiding and Multimedia Signal Processing (pp. 420-423). IEEE."
@@ -49,7 +49,7 @@
 - name: "Farooqui et al."
   institution: "National University of Sciences and Technology"
   field: Generic
-  scope: "Generic CPS"
+  scope: SCADA
   category: "Virtual"
   license: "Open description"
   reference: "Farooqui, A. A., et al. (2014, October). Cyber security backdrop: A scada testbed. In 2014 IEEE Computers, Communications and IT Applications Conference (pp. 98-103). IEEE."
@@ -59,7 +59,7 @@
 
 - name: "Genge et al."
   institution: "IPSC, Ispra"
-  field: Generic
+  field: Industry
   scope: "Generic ICS"
   category: "Virtual"
   license: "Not available"
@@ -84,7 +84,7 @@
 - name: "Giani et al."
   institution: "-"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Virtual"
   license: "Open description"
   reference: "Giani, A., et al. (2008). A testbed for secure and robust SCADA systems. ACM SIGBED Review, 5(2), 1-4."
@@ -96,7 +96,7 @@
 - name: "HAI Testbed"
   institution: "The Affiliated Institute of ETRI"
   field: Industry
-  scope: "Industrial"
+  scope: "Generic ICS"
   category: "Physical"
   license: "Open description"
   reference: "Shin, H. K., et al. (2019). Implementation of Programmable {CPS} Testbed for Anomaly Detection. In 12th {USENIX} Workshop on Cyber Security Experimentation and Test ({CSET} 19)."
@@ -143,7 +143,7 @@
 - name: "Jin et al."
   institution: "University of Illinois at Urbana-Champaign"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Virtual"
   license: "Open Description"
   reference: "Jin, D., et al. (2011, December). An event buffer flooding attack in DNP3 controlled SCADA systems. In Proceedings of the 2011 Winter Simulation Conference (WSC) (pp. 2614-2626). IEEE."
@@ -154,8 +154,12 @@
 - name: "SCADA-SST"
   year: 2016
   institution: "King Fahd University of Petroleum & Minerals"
-  field: Generic
-  scope: "2 different ICS"
+  field: 
+  - Water
+  - Energy
+  scope: 
+  - "Water Distribution"
+  - "Smart Grid"
   category: "Virtual"
   license: "Open-Source"
   reference: "Ghaleb, A., et al. (2016, December). SCADA-SST: a SCADA security testbed. In 2016 World Congress on Industrial Control Systems Security (WCICSS) (pp. 1-6). IEEE."
@@ -176,8 +180,8 @@
 
 - name: Kaouk et al.
   institution: "University of Grenoble"
-  field: Generic
-  scope: "Generic ICS"
+  field: Chemical
+  scope: Chemical Reactor
   category: "Hybrid"
   license: "Open Description"
   reference: "Kaouk, M., et al. (2018, October). A testbed for cybersecurity assessment of industrial and iot-based control systems."
@@ -187,7 +191,7 @@
 
 - name: "KYPO4INDUSTRY"
   institution: "Masaryk University"
-  field: Generic
+  field: Industry
   scope: "Generic ICS"
   category: "Hybrid"
   license: "Open description"
@@ -223,7 +227,7 @@
 
 - name: "Lancaster's testbed"
   institution: "Lancaster University"
-  field: Generic
+  field: Industry
   scope: "Generic ICS"
   category: "Physical"
   license: "Collaborations"
@@ -239,7 +243,7 @@
 
 - name: "LICSTER"
   institution: "Hochschule Augsburg"
-  field: Generic
+  field: Industry
   scope: "Generic ICS"
   category: "Physical"
   license: "Open-Source"
@@ -252,7 +256,7 @@
 - name: "Maynard SCADA"
   institution: "CSIT, Queen's University"
   field: Generic
-  scope: "General ICS"
+  scope: SCADA
   category: "Virtual"
   license: "Not available"
   reference: "Maynard, P., et al. (2018). An Open Framework for Deploying Experimental SCADA Testbed Networks. In 5th International Symposium for ICS %26 SCADA Cyber Security Research 2018 5 (pp. 92-101)."
@@ -274,8 +278,15 @@
 
 - name: "MSICST"
   institution: "University of Science and Technology of China"
-  field: Generic
-  scope: "4 Different ICS"
+  field: 
+  - Energy
+  - Smart City
+  - Industry
+  scope:
+  - Power Plant
+  - Railway
+  - Smart Grid
+  - CNC
   category: "Hybrid"
   license: "Open Description"
   reference: "Xu, W., et al. (2019). MSICST: multiple-scenario industrial control system testbed for security research. CMC: Computers, Materials %26 Continua, 60(2), 691-705."
@@ -299,7 +310,7 @@
 - name: "MiniCPS"
   institution: "Singapore University (SUTD)"
   field: Generic
-  scope: "General CPS"
+  scope: "Generic CPS"
   category: "Virtual"
   license: "Open-source"
   reference: "Antonioli, D., Tippenhauer, N. O. (2015). MiniCPS: A toolkit for security research on CPS networks. In Proceedings of the First ACM workshop on cyber-physical systems-security and/or privacy (pp. 91-100)."
@@ -327,7 +338,7 @@
 - name: "Mississipi Serial"
   institution: "Mississippi State University"
   field: Industry
-  scope: "Industrial operations"
+  scope: SCADA
   category: "Physical"
   license: "University"
   reference: "Morris, T., et al. (2011). A testbed for SCADA control system cybersecurity research and pedagogy. In Proceedings of the Seventh Annual Workshop on Cyber Security and Information Intelligence Research (pp. 1-1)."
@@ -351,7 +362,7 @@
 - name: "NIST"
   institution: "U.S. Department of Commerce"
   field: Industry
-  scope: "Industrial"
+  scope: Generic ICS
   category: "Hybrid"
   license: "Collaborations"
   reference: "Candell, R., et al. (2015). An industrial control system cybersecurity performance testbed. National Institute of Standards and Technology. NISTIR, 8089."
@@ -386,7 +397,7 @@
 - name: "Reavers and Morris"
   institution: "Georgia Institute of Tech."
   field: Generic
-  scope: "General ICS"
+  scope: "Generic ICS"
   category: "Virtual"
   license: "Open description"
   reference: "Reaves, B., Morris, T. (2012). An open virtual testbed for industrial control system security research. International Journal of Information Security, 11(4), 215-229."
@@ -410,7 +421,7 @@
   year: 2013
   institution: "American University of Beirut"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Physical"
   license: "Open Description"
   reference: "Sayegh, N., et al. (2013, June). Internal security attacks on SCADA systems. In 2013 Third International Conference on Communications and Information Technology (ICCIT) (pp. 22-27). IEEE."
@@ -420,7 +431,7 @@
 - name: "SCADASim"
   institution: "RMIT University, Melbourne"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Virtual"
   license: "Not available"
   reference: "Queiroz, C., et al. (2011). SCADASim—A framework for building SCADA simulations. IEEE Transactions on Smart Grid, 2(4), 589-597."
@@ -465,7 +476,7 @@
 - name: "SNL Testbed"
   institution: "Sandia National Laboratories"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Hybrid"
   license: "Open description"
   reference: "Urias, V., et al. (2012, October). Supervisory Command and Data Acquisition (SCADA) system cyber security analysis using a live, virtual, and constructive (LVC) testbed. In MILCOM 2012-2012 IEEE Military Communications Conference (pp. 1-8). IEEE."
@@ -550,7 +561,7 @@
 - name: "Wang et al."
   institution: "-"
   field: Generic
-  scope: "Generic ICS"
+  scope: SCADA
   category: "Virtual"
   license: "Open description"
   reference: "Wang, C., et al. (2010). A simulation environment for SCADA security analysis and assessment. In 2010 International Conference on Measuring Technology and Mechatronics Automation (Vol. 1, pp. 342-347). IEEE."
@@ -595,7 +606,9 @@
   institution: 'Vanderbilt University & Siemens Corporation'
   nation: USA
   field: Energy
-  scope: Power System
+  scope: 
+  - Power System
+  - DER Management
   category: Hybrid
   physics: S
   license: "Open description"
@@ -629,7 +642,7 @@
   institution: IIT Bombay
   nation: India
   field: Chemical
-  scope: Chemical
+  scope: Chemical Titration
   category: Hybrid
   physics: Variable
   license: "Open description"
@@ -646,7 +659,7 @@
   institution: IIUM
   nation: Malaysia
   field: Water
-  scope: Wastewater Systems
+  scope: Wastewater System
   category: Hybrid
   physics: M
   license: 
@@ -662,9 +675,9 @@
 - name: SWaP
   year: 2023
   institution: 'University of Strathclyde & Newcastle University'
-  field: Water
   nation: UK
-  scope: Water Management Systems
+  field: Water
+  scope: Water Management System
   category: Physical
   physics: R
   license: 
@@ -701,7 +714,7 @@
   - Chemical
   - Industry
   scope: 
-  - Chemical
+  - Tennessee Eastman Process
   - Manufacturing
   category: Virtual
   physics: S
@@ -735,8 +748,13 @@
   year: 2016
   institution: University of New Orleans
   nation: USA
-  field: Generic
-  scope: 3 Different ICS
+  field: 
+  - Energy
+  - Water
+  scope: 
+  - Power Grid
+  - Gas Pipeline
+  - Wastewater System
   category: Physical
   license: "Open Description"
   cost: Medium
@@ -848,7 +866,7 @@
   institution: University of Naples Federico II
   nation: Italy
   field: Energy
-  scope: Energy
+  scope: Smart Grid
   category: Hybrid
   physics: Variabile
   license: "Open source"
@@ -868,8 +886,8 @@
   - Water
   - Industry
   scope: 
-  - Energy
-  - Water
+  - Renewable
+  - Water Storage
   - Manufacturing
   category: Virtual
   physics: S
@@ -886,8 +904,8 @@
   year: 2025
   institution: 'KIINNC & University of Suwon'
   nation: Republic of Korea
-  scope: Nuclear Energy
   field: Energy
+  scope: Nuclear Energy
   category: Hybrid
   physics: S
   license: "Open description"
@@ -912,8 +930,8 @@
 - name: Kim et al.
   institution: National Security Research Institute
   year: 2019
-  scope: Cyber-Physical Battlefield Platform
   field: Military
+  scope: Battlefield Platform
   category: Hybrid
   license: "Open description"
   physics: R
@@ -1004,13 +1022,12 @@
   institution: University of Arizona
   nation: USA
   field: Chemical
-  scope: Chemical
+  scope: Chemical Tank Control
   category: Virtual
   physics: S
   license: "Open description"
   cost: Low
-  reference: 'Churilla, C. (2024). Conducting Attack Scenarios and Forensic Techniques in a Virtual ICS Test Bed. In 2024 Annual Computer Security Applications Conference Workshops (ACSAC Workshops) (pp.
-    155-162). IEEE.'
+  reference: 'Churilla, C. (2024). Conducting Attack Scenarios and Forensic Techniques in a Virtual ICS Test Bed. In 2024 Annual Computer Security Applications Conference Workshops (ACSAC Workshops) (pp. 155-162). IEEE.'
   resource: '-'
   protocol:
     - "Modbus/TCP"
@@ -1087,8 +1104,8 @@
   institution: 'University of California & Texas A&M University'
   nation: USA
   field: 
-  - Industry
   - Water
+  - Industry
   scope: 
   - Water Treatment
   - Logistics
@@ -1096,8 +1113,7 @@
   physics: S
   license: "Open source"
   cost: Low
-  reference: 'Salazar, L., et al. (2024). ICSNet: A Hybrid-Interaction Honeynet for Industrial Control Systems. In Proceedings of the Sixth Workshop on CPS&IoT Security and Privacy (CPSIoTSec''24) (pp.
-    12).'
+  reference: 'Salazar, L., et al. (2024). ICSNet: A Hybrid-Interaction Honeynet for Industrial Control Systems. In Proceedings of the Sixth Workshop on CPS&IoT Security and Privacy (CPSIoTSec''24) (pp. 12).'
   resource: 'https://anonymous.4open.science/r/ics-virtual-testbed-766D'
   protocol:
       - "Modbus/TCP"
@@ -1109,7 +1125,7 @@
   institution: engCORE Research Centre
   nation: Ireland
   field: Chemical
-  scope: Chemical
+  scope: Tennessee Eastman Process 
   category: Virtual
   physics: S
   license: "Open source"
@@ -1124,7 +1140,7 @@
   institution: 'University of Verona & University of Calabria & Eindhoven University of Technology'
   nation: 'Italy, Netherlands'
   field: Water
-  scope: Secure Water Treatment
+  scope: Water Treatment
   category: Virtual
   physics: S
   license: "Open description"
@@ -1218,7 +1234,7 @@
   institution: University of Idaho & Eastern Washington University
   nation: USA
   field: Water
-  scope: Water Systems
+  scope: Water System
   category: Virtual
   physics: S
   license: "Open source"

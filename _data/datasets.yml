@@ -1,5 +1,5 @@
 - name: '4SICS'
-  field: Generic
+  field: Industry
   scope: Generic ICS
   data_type: Network
   license: Open source
@@ -36,7 +36,7 @@
   license-specific: CC BY 4.0
 
 - name: "CLIK on PLCs!"
-  field: Generic
+  field: Industry
   scope: Generic ICS
   data_type:
     - Network
@@ -59,7 +59,7 @@
   license-specific: N/A
 
 - name: "Control-logic-attack-datasets"
-  field: Generic
+  field: Industry
   scope: Generic ICS
   data_type: Network
   license: "Open source"
@@ -232,7 +232,7 @@
 
 - name: 'HAI-20.03'
   field: Industry
-  scope: Industrial
+  scope: Multi-Process ICS
   data_type: Physical
   license: Open source
   url: 'https://github.com/icsdataset/hai'
@@ -251,7 +251,7 @@
 
 - name: HAI-21.03
   year: 2021
-  field: Generic
+  field: Industry
   scope: Multi-Process ICS
   data_type: 
   - Physical
@@ -369,7 +369,7 @@
   license-specific: N/A
 
 - name: 'S4x15 ICS'
-  field: Generic
+  field: Industry
   scope: Generic ICS
   data_type: Network
   license: Open source
@@ -482,7 +482,7 @@
   license-specific: N/A
 
 - name: "QUT_S7_Myers" 
-  field: Generic
+  field: Industry
   scope: Generic ICS
   data_type: 
     - Physical
@@ -570,6 +570,7 @@
     - 'DoS'
     - 'Injection'
     - 'Replay'
+    - 'MitM'
   attack_pct: variable
   format: 
     - pcap
@@ -699,8 +700,8 @@
 
 - name: Cyber4OT
   year: 2025
-  field: Generic
-  scope: Generic ICS
+  field: Industry
+  scope: Multi-Process ICS
   data_type: Network
   time: Var.
   entries: 4.25M
@@ -821,6 +822,7 @@
     - 'Reconnaissance'
     - 'MitM'
     - 'DoS'
+    - 'Injection'
     - 'Others'
   attack_pct: '-'
   format: 
