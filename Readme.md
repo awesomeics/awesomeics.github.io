@@ -16,9 +16,13 @@ In case of testbeds, for the time being, please replace `&` in citations with `%
 - [ ] Fix the need for URL-encoding of citations to allow for having hyperlinks to Google Scholar.
 - [ ] Improve the number of fields in the visualization.
 - [ ] Adding map.
+- [ ] Add paper cite once published. 
 - [x] Adding page with stats.
 - [x] Merging of entries from [previous work](https://spritz.math.unipd.it/projects/ics_survey/).
 - [x] Website is up. 
 
 ## Credits
 The format of this repo is inspired by [SecDeadlines](https://github.com/sec-deadlines/sec-deadlines.github.io).
+
+## Paper
+In progress.
